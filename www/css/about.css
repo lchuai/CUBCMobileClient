@@ -1,0 +1,14 @@
+.bottom-all {
+	text-align: center;
+}
+
+.imply p {
+	color: #8541ef;
+}
+
+.swiper-pagination-bullet {
+	background-color: #d2b772;
+}
+.swiper-container-horizontal>.swiper-pagination {
+	bottom: 5px;
+}

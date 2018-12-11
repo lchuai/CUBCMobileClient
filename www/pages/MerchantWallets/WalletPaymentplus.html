@@ -1,0 +1,26 @@
+<!-- 顶部导航-->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left back-left" id="WalletPaymentplus-index">
+			<a href="javascript:void(0);" class="link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+		<div class="center sliding">钱包付款</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="WalletPaymentplus" class="page no-tabbar payment_style_4s">
+		<div class="page-content content-bg payment_style_5s SettlementRequest_back">
+			<ul class="SaleDetails_top_ul SaleDetails_top_ul_change" style="background-color: #fff;border-top: 0px;">
+				<li><span>可用CUBC</span><span style="color: #00C39C;" id="WalletPaymentplus_Available">静态数据</span></li>
+				<li><span>地址</span><input id="WalletPaymentplus_address" name="SaleDetails4s" type="text" placeholder="请输入地址" /><span class="WalletPaymentplus_span_thgj"><a href="pages/MerchantWallets/scan.html"><img src="img/MerchantWallets/Sketchpad.png"/></a></span></li>
+				<li><span>金额(CNY)</span><input id="WalletPaymentplus_Amount" name="SaleDetails4s" type="text" placeholder="请输入转出金额" /></li>
+				<li><span>所需CUBC</span><input id="WalletPaymentplus_Required" class="btl_color_red" readonly="readonly" name="SaleDetails4s" type="text" value="" placeholder="录入充值金额自动计算" /></li>
+			</ul>
+			<div class="WalletPaymentplus_btn_btns width">
+				<a class="modify_btn" id="WalletPaymentplus_Confirm_Transfer" href="javascript:;" onclick="MerchantWallets.PaymentClickConfirmTransfer();">确认转出</a>
+			</div>
+		</div>
+	</div>
+</div>

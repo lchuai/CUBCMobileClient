@@ -1,0 +1,42 @@
+<!-- 顶部导航-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left back-left" id="modifyReturn">
+            <a href="javascript:void(0);" class="link">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding" id="Fundpasswordset">修改资金密码</div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="modify" class="page no-tabbar payment_style_4s">
+        <div class="page-content hide-bars-on-scroll content-bg payment_style_5s flex_c">
+           <ul class="modify_ul_4s">
+           		<li id="OriginalFundpassword">
+           			<span>原始资金密码</span>
+           			<input id="OriginalFundinput" name="modifys" type="password" placeholder="6-32位数字、字母或符号"/>
+           		</li>
+           		<li>
+           			<span id="myNewfundPassword">资金密码</span>
+           			<input id="modifyFundPasswordinput" name="modifys" type="password" placeholder="6-32位数字、字母或符号"/>
+           		</li>
+           		<li>
+           			<span>再次输入</span>
+           			<input id="entermodifyFundPasswordinput" name="modifys" type="password" placeholder="6-32位数字、字母或符号"/>
+           		</li>
+           		<li>
+           			<span>短信验证码</span>
+           			<input id="modifyverifiCationcodeinput" name="modifys" type="text" placeholder="请输入短信验证"/>
+           			<b></b>
+           			<input type="text" class="modifyzym" value="发送验证码" readonly="readonly" id="modifyverificationCode" onclick="sysIndex.sendemail();"/>
+           			<!--<label id="modifylabel" class="modifylabel">60</label>-->
+           		</li>
+           	</ul>
+           	<div class="modify_content">
+           		<a class="modify_btn" id="funds" href="javascript:;">确认</a>
+           		<p class="modify_p">警告：您的资金密码是用来交易、提现和账户安全设置，建议您的设置不要与登陆密码一致，由此产生的账户被盗，本站不负责</p>
+           	</div>
+        </div>
+    </div>
+</div>

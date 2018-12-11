@@ -1,0 +1,59 @@
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left back-left" id="myQuestionListsBack">
+			<a href="javascript:void(0);" class="back link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+
+		<div class="center sliding">我的问题</div>
+		<div class="right">
+			<a href="javascript:void(0);" onclick="sysIndex.linkEditQuestion();" class="link link-add">
+				<i class="iconfont icon-jia"></i>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="myQuestionList" class="page no-tabbar">
+		<div class="page-content pull-to-refresh-content infinite-scroll hide-bars-on-scroll content-bg" id="myQuestionPageId">
+			<div class="pull-to-refresh-layer">
+				<div class="preloader"></div>
+				<div class="pull-to-refresh-arrow"></div>
+			</div>
+			<div class="content-block myQuestionList-content">
+				<div class="myQuestionListContent" id="myQuestionListContent">
+					<!--<div class="myQuestionList">
+						<div class="questionTitle">
+							<p>怎么联系不上客服？</p>
+						</div>
+						<div class="require-time">
+							<span id="requireState" class="require">待回复</span>
+							<span class="question-time">2018-8-15</span>
+						</div>
+						<div class="require-content">
+								<p>回复:</p>
+						</div>
+					</div>
+					<div class="myQuestionList">
+						<div class="questionTitle">
+							<p>怎么联系不上客服？</p>
+						</div>
+						<div class="require-time">
+							<span class="require have-requred">已回复</span>
+							<span class="question-time">2018-8-15</span>
+						</div>
+						<div class="require-content">
+							<div class="require-title">回复：</div>
+							<p>有可能客服已经下班，客服上班时间是早上9:00-晚上18:00，您可以选择其中任意时间分段联系客服</p>
+						</div>
+					</div>-->
+				</div>
+			</div>
+			<!-- 加载提示符 -->
+			<div class="infinite-scroll-preloader">
+				<div class="preloader" id="lodingScroll"></div>
+			</div>
+		</div>
+	</div>
+</div>

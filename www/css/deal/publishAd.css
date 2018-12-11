@@ -1,0 +1,81 @@
+.FloatingProp{
+     height:1.875rem;
+     line-height: 1.875rem;
+     margin-bottom: 0.625rem;
+     border-bottom: 0.0625rem solid #E5E5E5;
+}
+ .FloatingPropTitle{
+     float: left;
+     margin-right: 5%;
+}
+ .FloatingPropContent{
+     float: left;
+     width: 79%;
+}
+ .FloatingPropContentInput input{
+     width: 79%;
+    /*height: 0.8125rem;
+     */
+     border: none;
+}
+ .transcationPrice{
+     color: #00c39c;
+}
+ .transcationPriceTitle{
+     width: 3.7rem;
+     float: left;
+     margin-right: 5%;
+}
+.toPtranscationPriceTitle{
+	float: left;
+    margin-right: 5%;
+}
+
+/*交易数额样式*/
+ .transcationNumTitle{
+     height: 1.875rem;
+     line-height: 1.875rem;
+     color: #b19d4d;
+     border-bottom: 0.0625rem solid #E5E5E5;
+}
+ .min-num{
+     height: 1.875rem;
+     line-height: 1.875rem;
+}
+ .max-num-width{
+     margin-left: 6%;
+}
+ .max-num-width input{
+     border: none !important;
+}
+ .ServiceCharge{
+     font-size: 0.8125rem;
+}
+ .transcationNumContent{
+     padding: 3% 0rem;
+}
+.transcationCUBC{
+	color:#efd342;
+}
+ .transcationPriceInput input{
+     width: 50%;
+     height: 1.6rem;
+     border:none;
+    /*border: 1px solid #e5e5e5;
+     */
+     border-radius: 0.1875rem;
+}
+ .publishBtn{
+     padding-top: 35%;
+     text-align: center;
+}
+ .color-orange{
+     color:#efd342;
+}
+ .regular-width{
+     width: 2.25rem;
+}
+ .regular-style{
+     margin-left:2.25rem;
+}
+ 

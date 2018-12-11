@@ -1,0 +1,180 @@
+[v-cloak] {
+	display: none !important;
+}
+
+.fixed:before,
+.clearfix:before,
+.cf:before,
+body:before,
+.header:before,
+.main:before,
+.footer:before {
+	content: '';
+	display: table;
+}
+
+.fixed:after,
+.clearfix:after,
+.cf:after,
+after,
+.header:after,
+.main:after,
+.footer:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.fixed,
+.clearfix,
+.cf,
+.header,
+.main,
+.footer {
+	*zoom: 1;
+}
+
+.clear,
+.cl {
+	display: block!important;
+	float: none!important;
+	clear: both;
+	width: auto!important;
+	max-width: none!important;
+	min-width: 0!important;
+	max-height: none!important;
+	min-height: 0!important;
+	overflow: hidden;
+	margin: 0!important;
+	padding: 0!important;
+	border: 0 none!important;
+	font-size: 0!important;
+	line-height: 0!important;
+}
+
+body {
+	/*background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;*/
+	background: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+input[type='button'],
+input[type='submit'],
+input[type='reset'],
+button {
+	border-radius: 5px;
+}
+
+/*input[type=color],
+input[type=date],
+input[type=datetime-local],
+input[type=datetime],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+select,
+textarea {
+	line-height: 1.05rem;
+	width: 100%;
+	height: 2.2rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-bottom: 0.75rem;
+	padding: 0.5rem 0.75rem;
+	-webkit-user-select: text;
+	border: 1px solid #f88a35;
+	border-radius: 5px;
+	outline: 0;
+	background-color: rgba(255, 255, 255, 0) !important;
+	-webkit-appearance: none;
+	color: #292929;
+}*/
+
+input::-ms-input-placeholder {
+	font-size: 0.8rem;
+	color: #232323;
+}
+
+input::-webkit-input-placeholder {
+	font-size: 0.8rem;
+	color: #232323;
+}
+
+input::-moz-placeholder {
+	font-size: 0.8rem;
+	color: #232323;
+}
+
+input:-moz-placeholder {
+	color: #232323;
+	font-size: 0.8rem;
+}
+
+
+/*提示字体颜色样式*/
+
+input::-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #C2C2C2;
+	opacity: 0.5;
+}
+
+input::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #C2C2C2;
+	opacity: 0.5;
+}
+
+input::-ms-input-placeholder {
+	color: #C2C2C2;
+	opacity: 0.5;
+}
+
+input::-webkit-input-placeholder {
+	color: #C2C2C2;
+	opacity: 0.5;
+}
+
+.text-white {
+	color: #fff;
+}
+
+
+/*设置背景颜色*/
+
+.content-bg {
+	background-color: #fff;
+	padding-top: 2rem!important;
+}
+
+
+/*返回按钮样式*/
+
+.back-left {
+	/*padding-left: 0.625rem;*/
+	width: 3.5rem;
+	margin-left: 0;
+	
+}
+.Reset-btns {
+	margin: 1.8rem auto!important;
+}
+.b-public {
+	background-color: #fff;
+	padding-top: 3rem!important;
+}

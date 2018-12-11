@@ -1,0 +1,51 @@
+<!-- 顶部导航-->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left back-left" id="MerchantWalletIndex-index">
+			<a href="javascript:void(0);" class="link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+		<div class="center sliding">商家钱包</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="MerchantWalletIndex" class="page no-tabbar payment_style_4s">
+		<div class="page-content content-bg payment_style_5s MerchantWalletIndex_s">
+			<div class="MerchantWalletIndex_fixed">
+			<div class="MerchantWalletIndex_div_erts width">
+				<dl onclick="MerchantWallets.JumpMerchantCollection();">
+					<dt><img src="img/MerchantWallets/Application.png" /></dt>
+					<dd style="color: #4481EB;">商家收款</dd>
+				</dl>
+				<dl onclick="MerchantWallets.JumpSettlementRequest();">
+					<dt><img src="img/MerchantWallets/Receipt.png" /></dt>
+					<dd class="btl_color_l">结算声请</dd>
+				</dl>
+			</div>
+			<ul class="MerchantWalletIndex_ul_erts_v width">
+				<li><span>收款CUBC：</span><span id="MerchantWalletIndex_DetailAssetsSum"></span></li>
+				<li><span>收款金额：</span><span id="MerchantWalletIndex_DetailAmountSum"></span></li>
+				<li><span>已结算额度：</span><span id="MerchantWalletIndex_DetailAssetsCompleteStateTwoSum"></span></li>
+				<li><span>未结算额度：</span><span id="MerchantWalletIndex_DetailAssetsCompleteStateOneSum"></span></li>
+			</ul>
+			</div>
+			<!--<div style="height: 14.78rem;"></div>-->
+			<ul class="MerchantWalletIndex_ul_node_v width" id="MerchantWalletIndex_ul_node_v_list_render">
+				<!--<li>
+					<div>
+						<p>40.00000000</p>
+						<p>20.00000000</p>
+					</div>
+					<div>
+						<p>2018-07-09</p>
+						<p><span>扫码收入</span><span>未结算</span></p>
+					</div>
+				</li>-->
+			</ul>
+			<!--<div class="modify_content">
+				
+			</div>-->
+		</div>
+	</div>
+</div>

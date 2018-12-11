@@ -1,0 +1,60 @@
+<!-- 顶部导航-->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left back-left" id="LivingPayment-WaterFeePayment">
+			<a href="javascript:void(0);" class="link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+		<div class="center sliding">水费缴费</div>
+		<div class="right close-picker" id="WaterFeePayment_query_o">
+			<div onclick="LivingPayment.WaterFeeListquery();">
+				<a href="javascript:void(0);" class="link link-filter">
+					<i class="f7-icons">menu</i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="WaterFeePayment" class="page no-tabbar payment_style_4s">
+		<div class="page-content hide-bars-on-scroll content-bg payment_style_5s flex_c">
+			<div class="SaleDetails2_Tobepaid" style="border-bottom: 0.3125rem solid #f6f6f6;">
+				<span class="ElectricityFee_spv_u">缴费单位</span>
+				<span id="WaterFeePayment_unit"></span>
+			</div>
+			<input type="hidden" id="WaterFeePayment_inputs_idsp" />
+			<div class="ElectricityFee_content">
+				<div class="SaleDetails2_Tobepaid_2s">
+					<ul class="SaleDetails2_Tobepaid_2s_ul_1s ElectricityFee_ul_1s">
+						<li>缴费户号</li>
+						<li>户名</li>
+						<li>住址信息</li>
+						<li>充值金额</li>
+						<li style="height: 4rem;">
+							<div>可用CUBC</div>
+							<div>所需CUBC</div>
+						</li>
+					</ul>
+					<ul class="SaleDetails2_Tobepaid_2s_ul_2s ElectricityFee_ul_2s">
+						<li id="WaterFeePayment_Account_numbers"></li>
+						<li id="WaterFeePayment_Account_name"></li>
+						<li id="WaterFeePayment_Account_address" style="color: #333;"></li>
+						<li><input id="WaterFeePayment_Account_inputs_g" type="number" class="ElectricityFee_ul_inpt" name="SaleDetails4s" id="" placeholder="请输入充值金额" /></li>
+						<li style="height: 4rem;">
+							<div class="btl_color_l" id="WaterFeePayment_Account_TransAssets_u"></div>
+							<div class="btl_color_red" id="WaterFeePayment_Account_TransAssets_p"><span class="btl_color_999">（录入充值金额自动计算）</span></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="SaleDetails2_Tobepaid">
+				<span>充值说明：</span>
+				<span class="ElectricityFee_sp_t btl_color_999">充值时间，9:00-17:00提交，当天内能充值到账，17:00以后提交充值，充值会有延迟</span>
+			</div>
+			<div class="modify_content">
+				<a class="modify_btn" onclick="LivingPayment.WaterConfirmations();" href="javascript:;">确认</a>
+			</div>
+		</div>
+	</div>
+</div>

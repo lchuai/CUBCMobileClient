@@ -1,0 +1,1617 @@
+{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "H50BAC3EE",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "CUBC",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "0.0.14",/*应用版本名称*/
+		"code": 14
+	},
+	"description": "币通链",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "www/index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": "http://www.dcloud.io"
+	},
+	"permissions": {
+		"Accelerometer": {
+			"description": "访问加速度感应器"
+		},
+		"Audio": {
+			"description": "访问麦克风"
+		},
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+		"Camera": {
+			"description": "访问摄像头"
+		},
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+		"Contacts": {
+			"description": "访问系统联系人信息"
+		},
+		"Device": {
+			"description": "访问设备信息"
+		},
+		"Downloader": {
+			"description": "文件下载管理"
+		},
+		"Events": {
+			"description": "应用扩展事件"
+		},
+		"File": {
+			"description": "访问本地文件系统"
+		},
+		"Gallery": {
+			"description": "访问系统相册"
+		},
+		"Geolocation": {
+			"description": "访问位置信息"
+		},
+		"Invocation": {
+			"description": "使用Native.js能力"
+		},
+		"Messaging": {
+			"description": "访问通讯能力"
+		},
+		"Orientation": {
+			"description": "访问方向感应器"
+		},
+		"Proximity": {
+			"description": "访问距离感应器"
+		},
+		"Storage": {
+			"description": "管理应用本地数据"
+		},
+
+		"Uploader": {
+			"description": "管理文件上传任务"
+		},
+		"Runtime": {
+			"description": "访问运行期环境"
+		},
+		"XMLHttpRequest": {
+			"description": "跨域网络访问"
+		},
+		"Zip": {
+			"description": "文件压缩与解压缩"
+		},
+		"Barcode": {
+			"description": "管理二维码扫描插件"
+		},
+		"Maps": {
+			"description": "管理地图插件"
+		},
+		"Speech": {
+			"description": "管理语音识别插件"
+		},
+		"Webview": {
+			"description": "窗口管理"
+		},
+		"NativeUI": {
+			"description": "原生UI控件"
+		},
+		"Navigator": {
+			"description": "浏览器信息"
+		},
+		"NativeObj": {
+			"description": "原生对象"
+		},
+		"Share": {}
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true,
+			"delay": "5000"
+		},
+		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"plugins": {
+				"share": {
+					"weixin": {
+						"appid": "wxaac42a3bdcbe6889",
+						"appsecret": "bec60ff87e5e0256ef14096a3d4eec5e",
+						"description": "可选，微信分享"
+					}
+				}
+			},
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密钥库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": ["<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>","<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>","<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>","<uses-permission android:name=\"android.permission.VIBRATE\"/>","<uses-permission android:name=\"android.permission.READ_LOGS\"/>","<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>","<uses-feature android:name=\"android.hardware.camera.autofocus\"/>","<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>","<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>","<uses-permission android:name=\"com.android.launcher.permission.UNINSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.CAMERA\"/>","<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>","<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>","<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>","<uses-permission android:name=\"com.android.launcher.permission.INSTALL_SHORTCUT\"/>","<uses-permission android:name=\"android.permission.INTERNET\"/>","<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>","<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>","<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>","<uses-permission android:name=\"android.permission.CALL_PHONE\"/>","<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>","<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>","<uses-feature android:name=\"android.hardware.camera\"/>","<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>","<uses-permission android:name=\"android.permission.RECEIVE_USER_PRESENT\"/>","<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>","<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"]
+			},
+			"orientation": [
+				"portrait-primary",
+				"portrait-secondary"
+			],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					/*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "unpackage/res/icons/57x57.png",/*iPhone普通屏幕程序图标，分辨率：57x57*/
+						"retina": "unpackage/res/icons/114x114.png",/*iPhone高分屏程序图标，分辨率：114x114*/
+						/*iPhone iOS7高分屏程序图标，分辨率：120x120*/
+						"spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone高分屏Spotlight搜索程序图标，分辨率：58x58*/
+						/*iPhone iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png", /*iPhone设置页面程序图标，分辨率：29x29*/
+						"app@2x": "unpackage/res/icons/120x120.png",
+						"app@3x": "unpackage/res/icons/180x180.png",
+						"settings@3x": "unpackage/res/icons/87x87.png",
+						"settings@2x": "unpackage/res/icons/58x58.png",
+						"spotlight@2x": "unpackage/res/icons/80x80.png",
+						"spotlight@3x": "unpackage/res/icons/120x120.png",
+						"notification@3x": "unpackage/res/icons/60x60.png",
+						"notification@2x": "unpackage/res/icons/40x40.png",
+						"retina8": "unpackage/res/icons/180x180.png",
+						"retina7": "unpackage/res/icons/120x120.png",
+						"settings-retina": "unpackage/res/icons/58x58.png",
+						"settings-retina8": "unpackage/res/icons/87x87.png",
+						"spotlight-retina7": "unpackage/res/icons/80x80.png"
+					},
+					"ipad": {
+						"normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "unpackage/res/icons/144x144.png", /*iPad高分屏程序图标，分辨率：144x144*/
+						/*iPad iOS7程序图标，分辨率：76x76*/
+						/*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "unpackage/res/icons/50x50.png", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "unpackage/res/icons/100x100.png", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						/*iPad设置页面程序图标，分辨率：29x29*/
+						"app": "unpackage/res/icons/76x76.png",
+						"app@2x": "unpackage/res/icons/152x152.png",
+						"settings": "unpackage/res/icons/29x29.png",
+						"proapp@2x": "unpackage/res/icons/167x167.png",
+						"spotlight": "unpackage/res/icons/40x40.png",
+						"settings@2x": "unpackage/res/icons/58x58.png",
+						"spotlight@2x": "unpackage/res/icons/80x80.png",
+						"notification": "unpackage/res/icons/20x20.png",
+						"notification@2x": "unpackage/res/icons/40x40.png",
+						"retina7": "unpackage/res/icons/152x152.png",
+						"normal7": "unpackage/res/icons/76x76.png",
+						"settings-retina": "unpackage/res/icons/58x58.png",
+						"settings-normal": "unpackage/res/icons/29x29.png",
+						"spotlight-normal7": "unpackage/res/icons/40x40.png",
+						"spotlight-retina7": "unpackage/res/icons/80x80.png"
+					},
+					"appstore": "unpackage/res/icons/1024x1024.png"
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png",
+					"xxxhdpi": "unpackage/res/icons/192x192.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "E:/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/开屏页苹果版-全尺寸/640x960.png",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": "E:/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/开屏页苹果版-全尺寸/640x1136.png",
+						"iphonex": "E:/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/开屏页苹果版-全尺寸/1125x2436.png",
+						"retina47": "E:/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/开屏页苹果版-全尺寸/750x1334.png",
+						"iphonexl": "E:/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/开屏页苹果版-全尺寸/2436x1125.png",
+						"retina55": "E:/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/开屏页苹果版-全尺寸/1242x2208.png",
+						"retina55l": "E:/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/开屏页苹果版-全尺寸/2208x1242.png"
+					},
+					"ipad": {
+						"portrait": "E:/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/开屏页苹果版-全尺寸/768x1004.png", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "E:/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/开屏页苹果版-全尺寸/1536x2008.png",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "E:/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/开屏页苹果版-全尺寸/1024x748.png", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "E:/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/开屏页苹果版-全尺寸/2048x1496.png", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "E:/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/开屏页苹果版-全尺寸/768x1024.png", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "E:/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/开屏页苹果版-全尺寸/1536x2048.png",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "E:/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/开屏页苹果版-全尺寸/1024x768.png", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": "E:/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/开屏页苹果版-全尺寸/2048x1536.png"
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "E:/工作项目/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/安卓过渡页/480x762.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "E:/工作项目/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/安卓过渡页/720x1242.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "E:/工作项目/币通链系统/DOC/03设计阶段/界面设计/效果图/黑金/安卓过渡页/1080x1882.png"
+				}
+			}
+		},
+		"ads": {
+			"rp": false,
+			"splash": false,
+			"push": false,
+			"spot": false
+		},"adid":"124302200209"
+	},
+	"dependencies": {
+		"pages": {
+			"htmls/main/main.html": {
+				"resources": [
+					"htmls/main/deal.html",
+					"js/mui.min.js",
+					"images/main/deal_icon.png",
+					"js/main/main.js",
+					"css/main/main.css",
+					"css/mui.min.css",
+					"images/main/quotation_icon.png",
+					"images/main/bg.jpg",
+					"js/ServerUrl.js",
+					"images/main/my_icon.png",
+					"images/main/my_icon01.png",
+					"images/main/quotation_icon01.png",
+					"images/main/foot_bg.jpg",
+					"images/main/deal_icon01.png",
+					"css/layer.css",
+					"js/tools/layer.js",
+					"htmls/main/Index.html"
+				],
+				"refer": [
+					"htmls/main/dashbord.html",
+					"htmls/main/message.html",
+					"htmls/main/login.html",
+					"htmls/main/wallet.html",
+					"htmls/main/shop.html"
+				],
+				"priority": 0
+			},
+			"htmls/main/dashbord.html": {
+				"resources": [
+					"images/settings/help.png",
+					"images/settings/wallet.png",
+					"images/settings/advertisement.png",
+					"css/public.css",
+					"images/bg.jpg",
+					"images/settings/log.png",
+					"js/main/dashbord.js",
+					"css/main/dashbord.css",
+					"images/settings/popularize.png",
+					"images/settings/bitcoiner.png",
+					"images/settings/remind.png",
+					"images/settings/settings.png",
+					"images/settings/ensure.png",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"js/tools/storage.js",
+					"js/jquery-3.2.1.min.js",
+					"js/my/setting/setting.js",
+					"js/ServerUrl.js"
+				],
+				"refer": [
+					"htmls/settings/person.html",
+					"login/login.html",
+					"login/main.html",
+					"login/unlock.html",
+					"htmls/my/guarantee.html",
+					"htmls/my/setting/setting.html",
+					"htmls/my/purse.html",
+					"htmls/my/ad/ad.html",
+					"htmls/my/circularise/circularise.html",
+					"htmls/my/help/help.html",
+					"htmls/my/purse/purse.html",
+					"htmls/my/guarrantee/guarantee.html",
+					"htmls/my/diary/log.html",
+					"htmls/my/circle-of-coin/circle-of-coin.html",
+					"htmls/my/remind/remindlist.html",
+					"htmls/user/login.html",
+					"htmls/user/sign-in.html"
+				],
+				"priority": 0
+			},
+			"login/main.html": {
+				"resources": [],
+				"refer": [
+					"login/setting.html",
+					"htmls/main/dashbord.html"
+				],
+				"priority": 0
+			},
+			"login/login.html": {
+				"resources": [],
+				"refer": [
+					"login/main.html",
+					"login/reg.html",
+					"login/forget_password.html"
+				],
+				"priority": 0
+			},
+			"login/unlock.html": {
+				"resources": [],
+				"refer": [
+					"login/main.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/guarantee.html": {
+				"resources": [],
+				"refer": [
+					"htmls/my/transfer.html",
+					"htmls/my/guarrantee/add-friends.html",
+					"htmls/my/guarrantee/transfer.html",
+					"htmls/my/guarrantee/turn-out.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/transfer.html": {
+				"resources": [
+					"htmls/my/guarantee.html"
+				],
+				"refer": [
+					"htmls/my/details.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/details.html": {
+				"resources": [],
+				"refer": [
+					"htmls/my/transfer.html",
+					"htmls/my/arbitration.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/arbitration.html": {
+				"resources": [],
+				"refer": [
+					"htmls/my/details.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/ad/ad.html": {
+				"resources": [
+					"js/my/ad/ad.js",
+					"css/my/ad/ad.css",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/public.css",
+					"js/ServerUrl.js",
+					"js/tools/storage.js",
+					"js/tools/common.js",
+					"js/jquery-3.2.1.min.js",
+					"images/my/list_ico5.png"
+				],
+				"refer": [
+					"htmls/main/dashbord.html",
+					"htmls/deal/advertise.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/purse.html": {
+				"resources": [],
+				"refer": [
+					"htmls/main/dashbord.html"
+				],
+				"priority": 0
+			},
+			"htmls/main/message.html": {
+				"resources": [
+					"images/main_3.png",
+					"images/main_2.png",
+					"images/comui_tab_post.png",
+					"images/main_4.png",
+					"images/main_1.png",
+					"css/main/message.css",
+					"fonts/mui.ttf",
+					"css/iconfont.css",
+					"fonts/iconfont.ttf",
+					"images/main/list_ico_3.png",
+					"js/main/deal_slider.js",
+					"images/my/btn_add.png",
+					"images/main/large_advertisement_01.jpg",
+					"images/main/jiantou.png",
+					"images/my/ico_picture.png",
+					"images/details/portrait.png",
+					"images/my/ico_close.png",
+					"css/common.css",
+					"images/my/ico_text.png",
+					"js/mui.js",
+					"images/main/list_ico_4.png",
+					"images/main/banner.png",
+					"js/main/message.js",
+					"js/jquery-3.2.1.min.js",
+					"images/bg.jpg",
+					"css/public.css",
+					"js/ServerUrl.js",
+					"js/deal-coin.js",
+					"css/mui.min.css",
+					"htmls/deal/small.html",
+					"images/icon_person.png",
+					"images/main/pay_ico_4.png",
+					"images/main/pay_ico_1.png",
+					"images/main/pay_ico_2.png",
+					"images/main/pay_ico_3.png",
+					"js/tools/storage.js",
+					"js/tools/common.js",
+					"htmls/deal/large.html",
+					"js/tools/layer.js"
+				],
+				"refer": [
+					"htmls/deal/liaison.html",
+					"htmls/deal/purchase.html",
+					"htmls/deal/advertise.html",
+					"htmls/main/affiche.html",
+					"htmls/deal/sell_purchase.html",
+					"htmls/user/sign-in.html"
+				],
+				"priority": 0
+			},
+			"htmls/main/deal.html": {
+				"resources": [
+					"js/main/deal.js",
+					"js/main/candlestick.js",
+					"css/main/deal.css",
+					"fonts/mui.ttf",
+					"js/tools/common.js",
+					"css/iconfont.css",
+					"fonts/iconfont.ttf",
+					"json/stock-DJI.json",
+					"js/tools/echarts.min.js",
+					"js/main/deal_kline.js",
+					"js/main/deal_market.js",
+					"css/my/my.css",
+					"js/deal-coin.js",
+					"js/jquery.min.js",
+					"js/mx.min.js",
+					"css/mui.css",
+					"js/main/deal_slider.js",
+					"css/public.css",
+					"images/bg.jpg",
+					"js/mui.min.js",
+					"js/ServerUrl.js",
+					"/manifest.json",
+					"js/tools/download.js",
+					"manifest.json",
+					"htmls/main/js/ApiUrl.js"
+				],
+				"refer": [
+					"htmls/main/dashbord.html",
+					"htmls/main/affiche.html",
+					"htmls/my/remind/remindlist.html",
+					"htmls/main/market_kline.html",
+					"htmls/market/market_kline.html",
+					"htmls/main/K.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/circularise/circularise.html": {
+				"resources": [
+					"fonts/mui.ttf",
+					"images/circularise.png",
+					"css/my/circularise.css",
+					"htmls/my/circularise/tpyq.html",
+					"htmls/main/dashbord.html",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"css/public.css",
+					"images/bg.jpg",
+					"js/my/cirsularise.js",
+					"css/iconfont.css",
+					"fonts/iconfont.ttf",
+					"images/comui_tab_wallet_pr.png",
+					"css/my/circularise/circularise.css",
+					"images/invite/banner.png",
+					"htmls/my/circularise/picture-invitation.html",
+					"css/icons-extra.css",
+					"images/comui_tab_person_selected.png",
+					"js/main/deal_slider.js",
+					"js/jquery-3.2.1.min.js",
+					"js/my/circularise/cirsularise.js",
+					"js/ServerUrl.js",
+					"images/my/circle-of-coin/link_copy.png",
+					"js/my/circularise/circularise.js",
+					"js/tools/share.js",
+					"images/my/circle-of-coin/pengyouquan.png",
+					"images/my/circle-of-coin/weixin.png",
+					"js/tools/storage.js",
+					"images/my/ico_close.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"htmls/my/circularise/tpyq.html": {
+				"resources": [
+					"images/fstpyqhy.png",
+					"css/my/tpyq.css",
+					"htmls/my/circularise/circularise.html",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"images/bg.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"htmls/my/help/help.html": {
+				"resources": [
+					"css/my/help.css",
+					"js/my/help/help.js",
+					"css/my/help/help.css",
+					"js/jquery-3.2.1.min.js",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"js/ServerUrl.js"
+				],
+				"refer": [
+					"htmls/my/help/helplist.html",
+					"htmls/my/help/helpdetail.html",
+					"htmls/my/help/plus.html",
+					"htmls/my/help/questionlist.html",
+					"htmls/my/help/editquestion.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/guarrantee/add-friends.html": {
+				"resources": [
+					"js/my/guarantee/add-friends.js",
+					"css/my/guarantee/ad-friends.css",
+					"css/iconfont.css"
+				],
+				"refer": [
+					"htmls/my/guarantee.html",
+					"htmls/my/guarrantee/guarantee.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/purse/purse.html": {
+				"resources": [
+					"css/my/purse/purse.css",
+					"images/portrait.png",
+					"images/details/guarantee.jpg",
+					"js/my/purse/purse.js",
+					"fonts/iconfont.ttf",
+					"js/mui.min.js",
+					"js/tools/storage.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"js/jquery-3.2.1.min.js",
+					"css/public.css",
+					"js/ServerUrl.js",
+					"images/icon_person.png"
+				],
+				"refer": [
+					"htmls/main/dashbord.html",
+					"htmls/my/purse/purse-btc.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/purse/purse-btc.html": {
+				"resources": [
+					"htmls/my/purse/deposit.html",
+					"css/my/purse/purse-btc.css",
+					"js/my/purse/purse-btc.js",
+					"js/mui.min.js",
+					"js/tools/storage.js",
+					"js/tools/common.js",
+					"js/jquery-3.2.1.min.js",
+					"css/mui.css",
+					"js/ServerUrl.js",
+					"css/iconfont.css",
+					"css/public.css"
+				],
+				"refer": [
+					"htmls/my/purse/purse.html",
+					"htmls/my/purse/roll-out.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/guarrantee/transfer.html": {
+				"resources": [
+					"css/my/my.css",
+					"js/mui.min.js",
+					"js/tools/storage.js",
+					"images/details/guarantee.jpg",
+					"js/jquery-3.2.1.min.js",
+					"images/my/ico_3.png",
+					"css/mui.css",
+					"js/ServerUrl.js",
+					"images/icon_person.png",
+					"css/my/guarantee/transfer.css",
+					"js/my/guarantee/transfer.js",
+					"fonts/mui.ttf",
+					"css/public.css",
+					"images/bg.jpg",
+					"css/iconfont.css"
+				],
+				"refer": [
+					"htmls/my/guarrantee/details.html",
+					"htmls/my/guarantee.html",
+					"htmls/my/guarrantee/guarantee.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/guarrantee/details.html": {
+				"resources": [
+					"js/tools/common.js",
+					"css/public.css",
+					"css/my/guarantee/details.css",
+					"images/my/ico_2_nor.png",
+					"css/mui.css",
+					"js/ServerUrl.js",
+					"css/my/my.css",
+					"js/my/guarantee/order_status.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"images/my/user_bg_zzxq.png",
+					"fonts/iconfont.ttf",
+					"images/my/ico_1_pre.png",
+					"js/jquery-3.2.1.min.js",
+					"js/my/guarantee/details.js",
+					"images/details/portrait.png",
+					"fonts/mui.ttf",
+					"images/bg.jpg",
+					"css/layer.css",
+					"js/tools/storage.js",
+					"js/tools/layer.js"
+				],
+				"refer": [
+					"htmls/my/guarrantee/arbitration.html",
+					"htmls/my/guarrantee/transfer.html",
+					"htmls/my/guarrantee/my_arbitration.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/guarrantee/arbitration.html": {
+				"resources": [
+					"images/my/add-img.png",
+					"css/my/guarantee/arbitration.css",
+					"js/tools/storage.js",
+					"css/public.css",
+					"css/mui.css",
+					"js/my/guarantee/arbitration.js",
+					"js/ServerUrl.js",
+					"css/my/my.css",
+					"images/my/circle-of-coin/bqqq_2.jpg",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"js/jquery-3.2.1.min.js",
+					"images/my/circle-of-coin/bqqq_3.jpg"
+				],
+				"refer": [
+					"htmls/my/guarrantee/details.html",
+					"htmls/my/guarrantee/operation.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/guarrantee/turn-out.html": {
+				"resources": [],
+				"refer": [
+					"htmls/my/guarantee.html",
+					"htmls/my/guarrantee/operation.html",
+					"htmls/my/guarrantee/guarantee.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/guarrantee/operation.html": {
+				"resources": [
+					"css/my/guarantee/operation.css",
+					"css/my/my.css",
+					"js/my/guarantee/order_status.js",
+					"js/my/guarantee/operation.js",
+					"js/mui.min.js",
+					"js/tools/common.js",
+					"css/iconfont.css",
+					"js/jquery-3.2.1.min.js",
+					"css/public.css",
+					"css/mui.css",
+					"js/ServerUrl.js",
+					"images/details/portrait.png",
+					"images/my/ico_2_nor.png",
+					"images/my/ico_1_pre.png",
+					"images/my/user_bg_zzxq.png",
+					"fonts/iconfont.ttf",
+					"css/layer.css",
+					"js/tools/layer.js",
+					"js/tools/storage.js"
+				],
+				"refer": [
+					"htmls/my/guarrantee/turn-out.html",
+					"htmls/my/guarrantee/arbitration.html",
+					"htmls/my/guarrantee/guarantee.html",
+					"htmls/my/guarrantee/my_arbitration.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/guarrantee/guarantee.html": {
+				"resources": [
+					"js/my/guarantee/guarantee.js",
+					"css/my/guarantee/guarantee.css",
+					"js/mui.min.js",
+					"js/tools/storage.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"js/jquery-3.2.1.min.js",
+					"css/public.css",
+					"js/ServerUrl.js",
+					"images/bg.jpg",
+					"images/details/portrait.png",
+					"images/icon_person.png",
+					"css/layer.css",
+					"js/tools/layer.js"
+				],
+				"refer": [
+					"htmls/my/guarrantee/turn-out.html",
+					"htmls/my/guarrantee/transfer.html",
+					"htmls/my/guarrantee/add-friends.html",
+					"htmls/my/guarrantee/operation.html",
+					"htmls/my/guarrantee/details.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/setting/setting.html": {
+				"resources": [
+					"css/my/setting/setting.css",
+					"js/user/login.js",
+					"images/details/guarantee.jpg",
+					"js/jquery-3.2.1.min.js",
+					"js/my/setting/setting.js",
+					"images/main/user_label.png",
+					"js/tools/storage.js",
+					"fonts/mui.ttf",
+					"css/public.css",
+					"js/ServerUrl.js",
+					"images/bg.jpg",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"htmls/main/dashbord.html",
+					"htmls/user/login.html",
+					"htmls/my/setting/setting-verify.html",
+					"htmls/my/setting/funds-password.html",
+					"htmls/my/setting/reset-login-password.html",
+					"htmls/user/sign-in.html",
+					"htmls/user/information.html",
+					"htmls/my/setting/band-cell-phone-number.html",
+					"htmls/my/setting/about-edition.html",
+					"htmls/main/main.html"
+				],
+				"priority": 0
+			},
+			"htmls/user/login.html": {
+				"resources": [],
+				"refer": [
+					"htmls/user/country_code.html",
+					"htmls/user/register.html"
+				],
+				"priority": 0
+			},
+			"htmls/user/register.html": {
+				"resources": [],
+				"refer": [
+					"htmls/user/country_code.html",
+					"htmls/user/login.html",
+					"htmls/user/sign-in.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/setting/reset-login-password.html": {
+				"resources": [
+					"js/my/setting/reset-login-password.js",
+					"css/my/setting/reset-login-password.css"
+				],
+				"refer": [
+					"htmls/my/setting/reset-next.html",
+					"htmls/my/setting/find_password.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/setting/reset-next.html": {
+				"resources": [],
+				"refer": [
+					"htmls/my/setting/setting.html",
+					"htmls/user/sign-in.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/help/helplist.html": {
+				"resources": [],
+				"refer": [
+					"htmls/my/help/plus.html",
+					"htmls/my/help/helpapplication.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/remind/remindlist.html": {
+				"resources": [
+					"css/my/remind/remindlist.css"
+				],
+				"refer": [
+					"htmls/my/remind/edit.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/remind/edit.html": {
+				"resources": [],
+				"refer": [
+					"htmls/my/remind/remindlist.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/purse/roll-out.html": {
+				"resources": [
+					"images/chat/send_disabled.png",
+					"js/my/purse/barcode.js",
+					"images/my/camrea.png",
+					"images/chat/transfer_selected.png",
+					"js/my/purse/immersed.js",
+					"css/my/purse/roll-out.css",
+					"js/my/purse/camera.js",
+					"js/my/purse/roll-out.js"
+				],
+				"refer": [
+					"htmls/my/purse/purse-btc.html",
+					"htmls/my/purse/scan.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/purse/deposit.html": {
+				"resources": [
+					"js/my/purse/deposit.js",
+					"css/my/purse/deposit.css",
+					"images/erweima.gif",
+					"htmls/my/purse/purse-btc.html",
+					"js/mui.min.js",
+					"js/tools/storage.js",
+					"css/mui.min.css",
+					"js/jquery-3.2.1.min.js",
+					"js/ServerUrl.js",
+					"images/my/barcode.png"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"htmls/my/circle-of-coin/circle-of-coin.html": {
+				"resources": [
+					"images/my/circle-of-coin/link_copy.png",
+					"js/my/circle-of-coin/circle-of-coin.js",
+					"images/my/ico_comment.png",
+					"images/my/circle-of-coin/pengyouquan.png",
+					"images/my/circle-of-coin/weixin.png",
+					"images/my/ico_forward.png",
+					"images/my/ico_like.png",
+					"css/my/circle-of-coin/circle-of-coin.css",
+					"htmls/my/circle-of-coin/attention.html",
+					"js/tools/storage.js",
+					"fonts/mui.ttf",
+					"css/public.css",
+					"js/ServerUrl.js",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"js/jquery-3.2.1.min.js",
+					"images/bg.jpg",
+					"css/common.css",
+					"js/tools/share.js"
+				],
+				"refer": [
+					"htmls/my/circle-of-coin/detailed-content.html",
+					"htmls/others/template.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/circle-of-coin/attention.html": {
+				"resources": [
+					"images/my/add-img.png",
+					"js/my/circle-of-coin/attention.js",
+					"css/my/circle-of-coin/attention.css",
+					"images/my/add.png",
+					"htmls/my/circle-of-coin/circle-of-coin.html",
+					"js/mui.min.js",
+					"js/tools/storage.js",
+					"css/mui.min.css",
+					"js/jquery-3.2.1.min.js",
+					"js/ServerUrl.js",
+					"css/public.css"
+				],
+				"refer": [
+					"htmls/my/circle-of-coin/detailed-content.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/circle-of-coin/detailed-content.html": {
+				"resources": [
+					"css/iconfont.css",
+					"css/my/circle-of-coin/detailed-content.css",
+					"js/my/circle-of-coin/detailed-content.js",
+					"js/tools/share.js",
+					"js/mui.min.js",
+					"css/common.css",
+					"js/tools/storage.js",
+					"js/jquery-3.2.1.min.js",
+					"css/mui.css",
+					"js/ServerUrl.js",
+					"images/icon_person.png",
+					"fonts/mui.ttf",
+					"css/public.css",
+					"images/bg.jpg",
+					"images/my/circle-of-coin/link_copy.png",
+					"images/my/ico_close.png",
+					"images/my/circle-of-coin/pengyouquan.png",
+					"images/my/circle-of-coin/weixin.png"
+				],
+				"refer": [
+					"htmls/my/circle-of-coin/attention.html"
+				],
+				"priority": 0
+			},
+			"htmls/user/sign-in.html": {
+				"resources": [
+					"images/login/login_ico_1.png",
+					"images/login/login_logo.png",
+					"css/user/sign-in.css",
+					"js/user/sign-in.js",
+					"images/login/login_ico_2.png",
+					"images/login/login_bg.png",
+					"js/tools/phone.js",
+					"js/mui.min.js",
+					"js/tools/storage.js",
+					"js/jquery-3.2.1.min.js",
+					"css/mui.css",
+					"js/ServerUrl.js"
+				],
+				"refer": [
+					"htmls/user/register.html",
+					"htmls/user/country_code.html",
+					"htmls/my/guarrantee/guarantee.html",
+					"htmls/my/purse/purse.html",
+					"htmls/my/setting/find_password.html",
+					"htmls/main/dashbord.html",
+					"htmls/my/setting/setting.html"
+				],
+				"priority": 0
+			},
+			"htmls/deal/small.html": {
+				"resources": [
+					"js/deal/small.js",
+					"js/main/deal_slider.js",
+					"css/public.css",
+					"css/mui.css",
+					"js/ServerUrl.js",
+					"js/deal/deal-const.js",
+					"images/details/portrait.png",
+					"css/common.css",
+					"css/iconfont.css",
+					"htmls/main/message.html",
+					"css/deal/small.css",
+					"js/jquery-3.2.1.min.js",
+					"js/mui.js"
+				],
+				"refer": [
+					"htmls/deal/purchase.html",
+					"htmls/deal/advertise.html"
+				],
+				"priority": 0
+			},
+			"htmls/deal/purchase.html": {
+				"resources": [
+					"images/main/zhuanhuan.png",
+					"images/main/ico_6.png",
+					"css/deal/purchase.css",
+					"images/comui_tab_post.png",
+					"images/deal_icon01.png",
+					"images/my/user_bg_zzxq.png",
+					"images/chat/more.png",
+					"images/icon_person.png",
+					"htmls/deal/chat.html",
+					"js/deal/purchase.js",
+					"js/mui.min.js",
+					"js/tools/storage.js",
+					"js/jquery-3.2.1.min.js",
+					"css/mui.css",
+					"js/ServerUrl.js",
+					"css/iconfont.css",
+					"css/public.css"
+				],
+				"refer": [
+					"htmls/deal/order.html"
+				],
+				"priority": 0
+			},
+			"htmls/deal/chat.html": {
+				"resources": [
+					"css/deal/chat.css",
+					"htmls/deal/purchase.html",
+					"images/details/portrait.png",
+					"images/main/ico_6.png",
+					"images/chat/chat.jpg",
+					"images/my/user_bg_zzxq.png",
+					"js/mui.js",
+					"css/mui.css",
+					"js/deal/arttmpl.js",
+					"js/deal/chat_window.js",
+					"js/deal/mui.imageViewer.js",
+					"js/deal/chat_buy_business.js",
+					"css/deal/chat_window.css",
+					"js/mui.min.js",
+					"js/tools/storage.js",
+					"js/jquery-3.2.1.min.js",
+					"js/deal/chat.js",
+					"js/ServerUrl.js",
+					"images/icon_person.png",
+					"css/iconfont.css",
+					"css/public.css",
+					"js/deal/chat_business.js"
+				],
+				"refer": [
+					"htmls/deal/order.html",
+					"htmls/my/help/help.html"
+				],
+				"priority": 0
+			},
+			"htmls/deal/order.html": {
+				"resources": [
+					"images/chat/collect_pay.png",
+					"images/chat/transfer_selected.png",
+					"images/chat/chat.jpg",
+					"images/chat/shot_selected.png",
+					"css/deal/order.css",
+					"images/chat/redpocket_selected.png",
+					"images/chat/pic_selected.png",
+					"images/main/ico_6.png",
+					"images/my/user_bg_zzxq.png",
+					"images/chat/more.png",
+					"htmls/deal/liaison.html",
+					"js/mui.js",
+					"css/mui.css",
+					"js/ServerUrl.js",
+					"images/details/portrait.png",
+					"js/deal/arttmpl.js",
+					"js/deal/order.js",
+					"js/mui.min.js",
+					"js/tools/storage.js",
+					"js/jquery-3.2.1.min.js",
+					"js/deal/chat_window.js",
+					"images/bg.jpg",
+					"js/deal/mui.imageViewer.js",
+					"images/icon_person.png",
+					"css/layer.css",
+					"js/deal/chat_buy_business.js",
+					"js/my/guarantee/order_status.js",
+					"css/deal/chat_window.css",
+					"js/tools/layer.js",
+					"fonts/mui.ttf",
+					"js/tools/common.js",
+					"css/public.css",
+					"css/iconfont.css",
+					"fonts/iconfont.ttf",
+					"js/deal/chat_business.js"
+				],
+				"refer": [
+					"htmls/my/help/help.html",
+					"htmls/deal/chat.html",
+					"htmls/deal/deal_arbitration.html",
+					"htmls/deal/my_deal_arbitration.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/circularise/picture-invitation.html": {
+				"resources": [
+					"images/my/circle-of-coin/link_copy.png",
+					"css/my/circularise/picture-invitation.css",
+					"images/my/circle-of-coin/pengyouquan.png",
+					"images/my/circle-of-coin/weixin.png",
+					"images/circularise.jpg",
+					"htmls/my/circularise/circularise.html",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/public.css",
+					"images/bg.jpg",
+					"js/tools/share.js",
+					"js/my/circularise/picture-invitation.js",
+					"js/jquery-3.2.1.min.js",
+					"js/ServerUrl.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"htmls/my/help/helpdetail.html": {
+				"resources": [
+					"js/HtmlEnDeCode.js",
+					"css/my/help/helpdetail.css",
+					"js/my/help/helpdetail.js",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"js/jquery-3.2.1.min.js",
+					"js/ServerUrl.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"htmls/deal/liaison.html": {
+				"resources": [
+					"css/deal/liaison.css",
+					"htmls/deal/order.html",
+					"fonts/mui.ttf",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/public.css",
+					"images/bg.jpg",
+					"images/details/portrait.png",
+					"js/tools/storage.js",
+					"js/deal/liaison.js",
+					"js/jquery-3.2.1.min.js",
+					"js/mui.js",
+					"js/ServerUrl.js",
+					"images/icon_person.png"
+				],
+				"refer": [
+					"htmls/deal/chat.html",
+					"htmls/deal/sell_order.html",
+					"htmls/deal/sell_chat.html"
+				],
+				"priority": 0
+			},
+			"htmls/deal/advertise.html": {
+				"resources": [
+					"css/layer.css",
+					"js/tools/layer.js",
+					"js/tools/storage.js",
+					"css/deal/advertise.css",
+					"js/deal/advertise.js",
+					"js/jquery-3.2.1.min.js",
+					"js/mui.js",
+					"js/deal/advertise_paytype.js",
+					"css/mui.css",
+					"js/ServerUrl.js",
+					"js/deal/deal-const.js",
+					"css/public.css",
+					"css/iconfont.css",
+					"fonts/iconfont.ttf"
+				],
+				"refer": [
+					"htmls/my/ad/ad.html",
+					"htmls/user/sign-in.html",
+					"htmls/user/country_code.html",
+					"htmls/deal/advertise_paytype.html"
+				],
+				"priority": 0
+			},
+			"htmls/user/information.html": {
+				"resources": [
+					"css/user/information.css",
+					"js/user/information.js",
+					"images/icon_person.png",
+					"js/tools/storage.js",
+					"js/jquery-3.2.1.min.js",
+					"js/mui.js",
+					"css/mui.css",
+					"js/ServerUrl.js"
+				],
+				"refer": [
+					"htmls/user/sign-in.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/help/questionlist.html": {
+				"resources": [
+					"js/tools/storage.js",
+					"css/my/help/questionlist.css",
+					"js/my/help/questionlist.js"
+				],
+				"refer": [
+					"htmls/my/help/editquestion.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/diary/log.html": {
+				"resources": [
+					"js/my/diary/log.js",
+					"js/tools/storage.js",
+					"js/jquery-3.2.1.min.js",
+					"css/my/diary/log.css",
+					"js/ServerUrl.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"htmls/my/help/editquestion.html": {
+				"resources": [
+					"js/my/help/editquestion.js",
+					"css/my/help/editquestion.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"htmls/main/market_kline.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/public.css",
+					"images/bg.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"htmls/main/affiche.html": {
+				"resources": [
+					"js/main/affiche.js",
+					"css/main/affiche.css",
+					"js/HtmlEnDeCode.js",
+					"js/jquery-3.2.1.min.js",
+					"js/ServerUrl.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"htmls/my/setting/about-edition.html": {
+				"resources": [
+					"images/my/banbentubiao144x144.png",
+					"css/my/setting/about-edition.css",
+					"manifest.json",
+					"js/my/setting/about-edition.js",
+					"js/tools/download.js",
+					"js/jquery.min.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"css/public.css",
+					"images/bg.jpg",
+					"js/ServerUrl.js",
+					"/manifest.json"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"htmls/my/setting/find_password.html": {
+				"resources": [
+					"js/user/sign-in.js",
+					"css/my/setting/find_password.css",
+					"js/mui.min.js",
+					"js/tools/storage.js",
+					"js/my/setting/find_password.js",
+					"css/mui.min.css",
+					"js/jquery-3.2.1.min.js",
+					"js/my/setting/setting.js",
+					"js/ServerUrl.js"
+				],
+				"refer": [
+					"htmls/my/setting/reset-pwd-next.html"
+				],
+				"priority": 0
+			},
+			"htmls/deal/large.html": {
+				"resources": [
+					"js/main/deal_slider.js",
+					"js/tools/storage.js",
+					"js/jquery-3.2.1.min.js",
+					"js/mui.js",
+					"js/deal/deal-const.js",
+					"js/ServerUrl.js",
+					"css/public.css",
+					"css/mui.css",
+					"css/deal/large.css",
+					"css/common.css",
+					"css/iconfont.css",
+					"images/icon_person.png",
+					"js/deal/large.js",
+					"htmls/main/message.html",
+					"fonts/iconfont.ttf",
+					"css/layer.css",
+					"js/tools/layer.js"
+				],
+				"refer": [
+					"htmls/deal/purchase.html",
+					"htmls/deal/liaison.html",
+					"htmls/deal/advertise.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/setting/band-cell-phone-number.html": {
+				"resources": [],
+				"refer": [
+					"htmls/my/setting/cell-phone-next.html",
+					"htmls/user/country_code.html"
+				],
+				"priority": 0
+			},
+			"htmls/deal/sell_purchase.html": {
+				"resources": [
+					"images/main/zhuanhuan.png",
+					"fonts/mui.ttf",
+					"js/deal/sell_purchase.js",
+					"css/deal/sell_purchase.css",
+					"css/mui.css",
+					"js/tools/storage.js",
+					"images/my/user_bg_zzxq.png",
+					"js/jquery-3.2.1.min.js",
+					"js/mui.js",
+					"js/ServerUrl.js",
+					"images/icon_person.png",
+					"css/iconfont.css",
+					"css/public.css",
+					"images/bg.jpg",
+					"fonts/iconfont.ttf"
+				],
+				"refer": [
+					"htmls/deal/order.html",
+					"htmls/deal/sell_order.html",
+					"htmls/deal/sell_chat.html"
+				],
+				"priority": 0
+			},
+			"htmls/my/setting/reset-pwd-next.html": {
+				"resources": [
+					"js/mui.min.js",
+					"js/tools/storage.js",
+					"css/mui.min.css",
+					"js/jquery-3.2.1.min.js",
+					"css/my/setting/reset-pwd-next.css",
+					"js/my/setting/reset-pwd-next.js",
+					"js/ServerUrl.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"htmls/deal/sell_order.html": {
+				"resources": [
+					"css/deal/sell_order.css",
+					"js/deal/sell_order.js",
+					"js/deal/arttmpl.js",
+					"css/layer.css",
+					"js/deal/chat_buy_business.js",
+					"js/my/guarantee/order_status.js",
+					"css/deal/chat_window.css",
+					"js/tools/layer.js",
+					"images/my/user_bg_zzxq.png",
+					"js/deal/mui.imageViewer.js",
+					"js/tools/storage.js",
+					"fonts/mui.ttf",
+					"js/tools/common.js",
+					"css/public.css",
+					"css/mui.css",
+					"images/bg.jpg",
+					"js/ServerUrl.js",
+					"js/mui.min.js",
+					"css/iconfont.css",
+					"fonts/iconfont.ttf",
+					"js/jquery-3.2.1.min.js",
+					"images/icon_person.png",
+					"js/deal/chat_sell_business.js",
+					"js/deal/chat_business.js"
+				],
+				"refer": [
+					"htmls/deal/deal_arbitration.html",
+					"htmls/deal/my_deal_arbitration.html"
+				],
+				"priority": 0
+			},
+			"htmls/deal/deal_arbitration.html": {
+				"resources": [
+					"images/my/add-img.png",
+					"css/deal/deal_arbitration.css",
+					"js/deal/deal_arbitration.js",
+					"images/my/add.png",
+					"css/my/my.css",
+					"js/tools/storage.js",
+					"js/tools/common.js",
+					"js/jquery-3.2.1.min.js",
+					"js/mui.js",
+					"css/mui.css",
+					"js/ServerUrl.js",
+					"css/public.css",
+					"css/iconfont.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"htmls/deal/advertise_paytype.html": {
+				"resources": [
+					"js/mui.min.js",
+					"js/tools/storage.js",
+					"css/deal/advertise_paytype.css",
+					"css/mui.min.css",
+					"js/jquery-3.2.1.min.js",
+					"js/deal/advertise_paytype.js",
+					"js/ServerUrl.js",
+					"css/public.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"htmls/deal/my_deal_arbitration.html": {
+				"resources": [
+					"js/deal/my_deal_arbitration.js",
+					"css/my/my.css",
+					"css/deal/my_deal_arbitration.css",
+					"js/mui.min.js",
+					"js/tools/storage.js",
+					"js/tools/common.js",
+					"js/jquery-3.2.1.min.js",
+					"css/mui.css",
+					"js/ServerUrl.js",
+					"fonts/mui.ttf",
+					"css/public.css",
+					"images/bg.jpg",
+					"css/iconfont.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"index.html": {
+				"resources": [
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"htmls/deal/sell_chat.html": {
+				"resources": [
+					"css/deal/sell_chat.css",
+					"css/deal/chat_window.css",
+					"js/mui.min.js",
+					"js/tools/storage.js",
+					"js/jquery-3.2.1.min.js",
+					"css/mui.css",
+					"js/ServerUrl.js",
+					"images/icon_person.png",
+					"js/deal/arttmpl.js",
+					"js/deal/sell_chat.js",
+					"js/deal/chat_sell_business.js",
+					"js/deal/mui.imageViewer.js",
+					"css/public.css",
+					"js/deal/chat_business.js",
+					"css/iconfont.css",
+					"fonts/mui.ttf",
+					"images/bg.jpg",
+					"images/my/user_bg_zzxq.png",
+					"fonts/iconfont.ttf"
+				],
+				"refer": [
+					"htmls/deal/sell_purchase.html"
+				],
+				"priority": 0
+			},
+			"htmls/user/country_code.html": {
+				"resources": [
+					"js/mui.min.js",
+					"js/user/country_code.js",
+					"css/mui.min.css",
+					"css/user/country_code.css",
+					"js/jquery-3.2.1.min.js",
+					"css/mui.indexedlist.css",
+					"js/ServerUrl.js",
+					"js/mui.indexedlist.js",
+					"fonts/mui.ttf",
+					"css/public.css",
+					"images/bg.jpg"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"www/index.html": {
+				"resources": [
+					"www/img/index/home-activ.png",
+					"www/img/index/wallet.png",
+					"www/lib/initLoad.js",
+					"www/img/index/my.png",
+					"www/js/common/my/InviteUser.js",
+					"www/css/framework7-icons.css",
+					"www/css/wallet.css",
+					"www/img/index/topBanner1.jpg",
+					"www/img/shop/shopIndex.png",
+					"www/css/index.css",
+					"www/img/wallet/release.png",
+					"www/js/common/sysindex.js",
+					"www/css/powerWalletDetail.css",
+					"www/lib/layer/layer.css",
+					"www/img/public/favicon.ico",
+					"www/js/my-app.js",
+					"www/img/index/topBanner3.jpg",
+					"www/img/wallet/transaction.png",
+					"www/img/wallet/shopping.png",
+					"www/css/login.css",
+					"www/img/wallet/allmoney.png",
+					"www/img/index/shop.png",
+					"www/css/VerifyPassword.css",
+					"www/css/public.css",
+					"www/css/ResetPassword.css",
+					"www/lib/jQuery/jquery-1.11.0.min.js",
+					"www/css/shop.css",
+					"www/js/common/myindex.js",
+					"www/lib/framework7/js/framework7.min.js",
+					"www/css/invite.css",
+					"www/css/iconfont/iconfont.css",
+					"www/js/core/sys-params.js",
+					"www/js/core/sys-util.js",
+					"www/css/about.css",
+					"www/lib/framework7/css/framework7.ios.min.css",
+					"www/img/wallet/energy.png",
+					"www/js/mui.min.js",
+					"www/css/myindex.css",
+					"www/img/index/nameLogoNO.png",
+					"www/img/wallet/money.png",
+					"www/lib/layer/layer.js",
+					"www/img/index/topBanner2.jpg",
+					"www/js/sys-app.js",
+					"www/js/common/shop.js",
+					"www/img/index/nameLogo.png",
+					"www/lib/framework7/css/framework7.ios.colors.min.css",
+					"www/lib/vue.js",
+					"www/img/wallet/linkico.png",
+					"www/img/wallet/walletImg.jpg",
+					"www/img/wallet/Intelligence.png",
+					"www/js/common/wallet.js",
+					"www/css/font-awesome.min.css",
+					"www/css/register.css",
+					"www/img/index/home.png",
+					"www/img/index/my-activ.png",
+					"manifest.json",
+					"www/pages/my/login.html",
+					"www/img/my/myVertify.png",
+					"www/img/index/indexLogo.png",
+					"www/img/my/myAbout.png",
+					"www/img/my/myInvite.png",
+					"www/img/my/myResert.png",
+					"www/img/my/myBangding.png",
+					"www/img/my/myExit.png",
+					"www/img/index/banner1.jpg",
+					"www/img/my/nickName.png",
+					"www/img/index/banner3.jpg",
+					"www/img/index/banner2.jpg",
+					"www/img/public/logonew.png",
+					"www/img/my/loginPhone.png",
+					"www/img/my/loginPassword.png",
+					"www/pages/wallet/rootAssetsDetail.html",
+					"www/img/index/wallet-activ.png",
+					"www/pages/wallet/link.html",
+					"www/pages/my/VerifyRealname.html",
+					"www/pages/my/InviteFriends.html",
+					"www/pages/my/binding.html",
+					"www/pages/my/bindingNext.html",
+					"www/pages/my/ResetPassword.html",
+					"www/pages/my/ResetPasswordNext.html",
+					"www/pages/my/ForgetPassword.html",
+					"www/pages/my/ForgetPasswordNext.html",
+					"www/pages/my/register.html",
+					"www/img/my/logo10241024white.png",
+					"www/pages/my/about.html",
+					"www/pages/newsContent.html",
+					"www/pages/my/payment.html",
+					"www/pages/my/modify.html",
+					"www/pages/MerchantWallets/WalletPaymentplus.html"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"images/comui_tab_person.png",
+				"images/comui_tab_wallet.png",
+				"js/public.js",
+				"images/comui_tab_message_selected.png",
+				"images/comui_tab_deal.png",
+				"images/chat/chatto_bg_normal.9.png",
+				"images/comui_tab_deal_pr.png",
+				"images/comui_tab_message.png"
+			]
+		}
+	},
+	"unpackage": []
+}

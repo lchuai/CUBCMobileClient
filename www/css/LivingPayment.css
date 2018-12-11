@@ -1,0 +1,616 @@
+/*生活缴费开始*/
+.link-filter i{
+	font-size: 1.5rem;
+}
+.city::-webkit-scrollbar {
+	/*隐藏滚轮*/
+	display: none;
+}
+
+.text-c {
+	text-align: center;
+}
+
+.TelephonePayment_inputs_iphones_plus {
+	margin-top: 0.3rem;
+	border: 1px solid #f6f6f6!important;
+	color: #777;
+	width: 55vw;
+	text-align: center;
+	border-radius: 4px;
+	height: 0.8rem!important;
+	padding: 0.5rem 0.6rem!important;
+	margin-bottom: 0;
+	line-height: 0.8rem!important;
+}
+
+.content-block-conts {
+	margin: 17vh auto;
+	width: 80vw;
+	height: 60vh;
+}
+
+.LivingPayment_Content_icon {
+	text-align: center;
+	border-bottom: 0.3125rem solid #f6f6f6;
+}
+
+.LivingPayment_Content_icon li {
+	width: 33.33%;
+	float: left;
+}
+
+.LivingPayment_Content_icon li:nth-child(2) {
+	border-left: 1px solid #f6f6f6;
+	width: calc(33.33% - 2px);
+	border-right: 1px solid #f6f6f6;
+}
+
+.LivingPayment_Content_icon li img {
+	width: 1.5rem;
+	margin-top: 1rem;
+}
+
+.LivingPayment_Content_icon li p {
+	margin: 0.3rem 0 0.8rem 0;
+}
+
+.LivingPayment_Content_link {}
+
+.LivingPayment_Content_link li {
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid #f6f6f6;
+}
+.LivingPayment_swipeout {
+	height: 3.5rem;
+}
+.LivingPayment_swipeout div {
+	float: left;
+	height: 3.5rem;
+}
+
+.LivingPayment_swipeout div:nth-child(1),
+.LivingPayment_swipeout div:nth-child(3) {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.LivingPayment_swipeout div:nth-child(1) img {
+	width: 2.2rem;
+	margin-right: 0.7rem;
+	margin-left: 0.7rem;
+}
+
+.LivingPayment_swipeout div:nth-child(3) {
+	float: right;
+}
+
+.LivingPayment_swipeout div:nth-child(2) p:nth-child(1) {
+	margin: 0;
+	height: 1.75rem;
+	line-height: 2rem;
+}
+
+.LivingPayment_swipeout div:nth-child(2) p:nth-child(2) {
+	margin: 0;
+	height: 1.75rem;
+	line-height: 1.5rem;
+	color: #888;
+}
+
+.LivingPayment_swipeout div:nth-child(2) p:nth-child(2) span:nth-child(2) {
+	margin-left: 0.6rem;
+}
+
+.LivingPayment_swipeout div:nth-child(3) img {
+	width: 0.7rem;
+	margin-right: 0.7rem;
+}
+.LivingPayment-close {
+	background-color: #ff3b30!important;
+}
+
+/*生活缴费结束*/
+
+
+/*新增缴费账户开始*/
+
+.TheAccount_ert_u {
+	width: 100vw;
+	height: 100vh;
+	box-sizing: border-box;
+	padding: 0 0.8rem;
+}
+
+.TheAccount_ert_u_p_e_ert_w {
+	text-align: center;
+	font-size: 0.83rem;
+	font-weight: bold;
+}
+
+.TheAccount_ert_u_p_e {
+	text-indent: 1.5rem;
+	text-align: justify;
+}
+
+.btl_color_h {
+	color: #d2b772;
+}
+
+.btl_color_l {
+	color: #00C39C;
+}
+
+.btl_color_red {
+	color: #F89282;
+}
+
+.btl_color_999 {
+	color: #999;
+}
+
+.NewUserElectricity_containes {
+	height: 2.2rem;
+}
+
+.NewUserElectricity_containes img {
+	width: 1.4rem;
+}
+
+.NewUserElectricity_footer_comments {
+	padding: 0.8rem 0;
+	float: left;
+}
+
+.NewUserElectricity_media {
+	width: 1.1rem;
+	float: left;
+}
+
+.NewUserElectricity_i {
+	top: 0!important;
+	width: 1.1rem!important;
+	height: 1.1rem!important;
+}
+
+.NewUserElectricity_mspans {
+	margin-top: 0.15rem;
+	margin-left: 0.5rem;
+	color: #999;
+}
+
+
+/*新增缴费账户结束*/
+
+
+/*电费缴费开始*/
+
+.ElectricityFee_spv_u {
+	width: calc(32vw - 0.8rem);
+	margin-right: 0!important;
+}
+
+.ElectricityFee_ul_1s {
+	color: #333;
+}
+
+.ElectricityFee_ul_1s li {
+	padding-left: 0.8rem;
+	box-sizing: border-box;
+}
+
+.ElectricityFee_ul_1s li,
+.ElectricityFee_ul_2s li {
+	border-bottom: 1px solid #f6f6f6;
+	box-sizing: border-box;
+}
+
+.ElectricityFee_ul_inpt {
+	border: none;
+	color: #d2b772;
+}
+
+.ElectricityFee_ul_2s {
+	width: 68vw;
+}
+
+.ElectricityFee_sp_t {
+	line-height: 1.2rem;
+	padding-bottom: 0.5rem;
+}
+
+.ElectricityFee_password_style {
+	line-height: 2rem;
+    box-sizing: border-box;
+    padding-left: 0.8rem;
+    border: 1px solid #f6f6f6;
+    width: 58vw;
+    display: block;
+    height: 2rem;
+    border-radius: 4px;
+    float: left;
+}
+
+.ElectricityFee_yes_erts {
+	display: block;
+	float: right;
+	height: 2rem;
+	width: 3rem;
+	color: #fff;
+	background-color: #00C39C;
+	line-height: 2rem;
+	border-radius: 4px;
+	text-align: center;
+
+}
+
+/*电费缴费结束*/
+
+
+/*账单详情开始*/
+
+.ElectricityDetails_conty {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+
+.ElectricityDetails_ul_i_last {
+	text-align: center;
+}
+
+.ElectricityDetails_ul_i_last li {
+	line-height: 2.2rem;
+}
+
+.RechargeElectricity_containes {
+	height: 4rem;
+	width: 17%;
+}
+
+.RechargeElectricity_o_uls_t li {
+	border-bottom: 1px solid #F6F6F6;
+	float: left;
+	height: 4rem;
+	width: 100%;
+}
+
+.RechargeElectricity_containes img {
+	width: 2.2rem;
+}
+
+.RechargeElectricity_dl_mys {
+	width: 83%;
+	height: 4rem;
+}
+
+.RechargeElectricity_dl_mys dt {
+	float: left;
+}
+
+.RechargeElectricity_dl_mys dd {
+	float: right;
+}
+
+.RechargeElectricity_dl_firest {
+	line-height: 2.7rem;
+	box-sizing: border-box;
+	padding-right: 0.8rem;
+}
+
+.RechargeElectricity_dl_firest dt {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 60vw;
+	overflow: hidden;
+}
+
+.RechargeElectricity_dl_last {
+	line-height: 0.2rem;
+	box-sizing: border-box;
+	padding-right: 0.8rem;
+}
+
+
+/*账单详情结束*/
+
+
+/*电话缴费开始*/
+
+.TelephonePayment_ul_relative ul li {
+	height: 3.6rem;
+}
+
+.TelephonePayment_ul_relative_son ul li {
+	height: 5rem;
+}
+
+
+/*电话缴费结束*/
+
+
+/*城市选择开始*/
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.none {
+	display: none;
+}
+
+.loan_jm1 {
+	width: 94%;
+	margin: 0 auto;
+}
+
+.loan_jm_spa1 {
+	width: 39%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1em;
+	color: #666;
+	display: block;
+	float: left;
+}
+
+.loan_jm_l1 {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	height: 40px;
+}
+
+.wbk_srn {
+	width: 57%;
+	height: 40px;
+	border: 1px solid #ccc;
+	background: #FFF;
+	float: left;
+	padding-left: 3%;
+	line-height: 40px;
+	color: #ADADAD;
+	font-size: 1.1em;
+	background-size: 45%;
+	background-position: center;
+	background: #fff;
+}
+
+.wbk_srn b {
+	width: 30px;
+	height: 40px;
+	border: 1px solid #ccc;
+	background: #FFF;
+	float: left;
+	padding-left: 3%;
+	line-height: 40px;
+	color: #ADADAD;
+	font-size: 1.1em;
+}
+
+
+/*显示点击是哪个字母*/
+
+.showLetter {
+	position: fixed;
+	color: #105eae;
+	width: 50px;
+	z-index: 4008;
+	height: 50px;
+	top: 45%;
+	left: 45%;
+	border-radius: 50%;
+	border: #105eae 1px solid;
+	text-align: center;
+	display: none;
+}
+
+.showLetter span {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
+}
+
+.seach {
+	width: 90%;
+	height: 45px;
+	padding-top: 10px;
+	background: #fff;
+}
+
+.seach input {
+	width: 90%;
+	height: 45px;
+	font-size: 16px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #eee;
+	color: #000
+}
+
+
+/*城市弹层*/
+
+.container {
+	/*width: 90%;*/
+	/*right: 20;
+	overflow-y: scroll*/
+}
+
+.city p {
+	margin: 0;
+}
+
+.letter {
+	width: 2rem;
+	position: fixed;
+	bottom: 0;
+	height: 135vw;
+	z-index: 4099;
+	top: 3rem;
+	right: 0;
+	margin: auto;
+	display: none;
+	text-align: center;
+}
+
+.letter ul li {
+	/*margin-bottom: 0.1rem;*/
+}
+
+.letter ul li a {
+	text-decoration: none;
+	color: #105eae;
+	display: block;
+	font-size: 0.8rem;
+}
+
+.tips {
+	box-sizing: border-box;
+	width: 100%;
+	padding-left: 0.85rem;
+	margin-top: 0.5rem;
+}
+
+.city {
+	/*width: 90%;*/
+	/*padding: 20px 20px 20px 10px;*/
+}
+
+.history {
+	margin-top: 15px;
+}
+
+.hot {
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 0.5rem;
+	/*-ms-flex-pack: distribute;
+	justify-content: space-around;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;*/
+	padding: 0 0.8rem;
+	box-sizing: border-box;
+}
+
+.hot div {
+	display: block;
+	width: 16%;
+	float: left;
+	text-align: center;
+	line-height: 1.4rem;
+	color: #333;
+	background-color: #f6f6f6;
+	margin-top: 0.5rem;
+	margin-right: 4%;
+	border-radius: 4px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.clear-history {
+	display: block;
+	float: right;
+}
+
+.city-list {
+	width: 100%;
+}
+
+.city-list .city-letter {
+	font-size: 1rem;
+	padding-left: 0.8rem;
+	box-sizing: border-box;
+	display: inline-block;
+	background-color: #f6f6f6;
+	width: 100%;
+}
+
+.city-list p {
+	color: #333;
+	line-height: 45px;
+	border-bottom: 1px solid #f6f6f6;
+	cursor: pointer;
+	padding: 0 0.8rem;
+	box-sizing: border-box;
+}
+
+.city-list p:first-child {
+	border: 0px;
+}
+
+.UISelect {
+	margin-top: 5px
+}
+
+.cityinputs_t {
+	position: relative;
+	line-height: 2.2rem;
+	/*border-bottom: 1px solid #f6f6f6;*/
+	width: 100%;
+	padding: 0 0.8rem;
+	box-sizing: border-box;
+	float: left;
+}
+
+.cityinputs_t input {
+	width: 100%;
+	border-radius: 30px;
+	background-color: #f6f6f6;
+	display: inline-block;
+	line-height: 1.6rem;
+	box-sizing: border-box;
+	padding-left: 1.8rem;
+	border: none;
+}
+
+.cityinputs_t img {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	width: 0.9rem;
+	margin-left: 0.6rem;
+}
+
+.cityinputs_t span {
+	/*display: inline-block;*/
+	color: #04c29c;
+	display: none;
+	width: 13%;
+	text-align: center;
+}
+
+.CityChoice_search {
+	display: none;
+}
+
+.CityChoice_search li {
+	color: #333;
+	line-height: 45px;
+	border-bottom: 1px solid #f6f6f6;
+	cursor: pointer;
+	padding: 0 0.8rem;
+	box-sizing: border-box;
+}
+
+
+/*城市选择结束*/

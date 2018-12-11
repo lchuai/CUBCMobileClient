@@ -1,0 +1,65 @@
+.power-wallet-list {
+	border-bottom: 0.0625rem solid #E5E5E5;
+	display: block!important;
+	padding-right: 0rem!important;
+}
+
+.item-wallet-list {
+	margin: 1rem 0rem;
+}
+
+.item-wallet-content-list {
+	margin-top: 0.45rem!important;
+}
+
+.item-left {
+	width: 72%;
+	float: left;
+	line-height: 1.5rem;
+}
+
+.left-just {
+	color: #00c39c;
+}
+
+.left-negative {
+	color: #f5593f;
+}
+
+.item-left-remark {
+	/*font-size: 0.8125rem;*/
+	float: left;
+}
+
+.item-right {
+	line-height: 1.5rem;
+	/*font-size: 0.8125rem;*/
+}
+
+.wallet-item-title {
+	width: 100%;
+}
+
+.wallet-item-information-title {
+	font-size: 13px;
+	color: #b19d4d;
+}
+
+.wallet-item-title-information {
+	font-size: 11px;
+	color: red;
+}
+
+.wallet-item-line {
+	line-height: 1.5rem;
+	height: 1.5rem;
+}
+
+.wallet-item-content {
+	color: black;
+}
+
+.icon-jia-style {
+	color: black;
+	font-size: 1.875rem;
+}

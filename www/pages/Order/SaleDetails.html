@@ -1,0 +1,54 @@
+<!-- 顶部导航-->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left back-left" id="SaleDetails-1s">
+			<a href="javascript:void(0);" class="link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+		<div class="center sliding">出售CUBC</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="SaleDetails" class="page no-tabbar payment_style_4s">
+		<div class="page-content hide-bars-on-scroll content-bg payment_style_5s flex_c">
+			<div class="SaleDetails_top">
+				<div id="SaleDetailsAvatar-show-t"></div>
+				<div class="SaleDetails_top_div_2">
+					<span id="SaleDetailsAvatar-userName-t">CUBC欧阳信</span>
+					<span class="Ouyang">
+						<img id="Alipay-SaleDetails-o-m" src="img/index/Alipay-s.png"/>
+						<img id="silver-SaleDetails-o-m" src="img/index/silver-s.png"/>
+						<img id="WeChat-SaleDetails-o-m" src="img/index/WeChat-s.png"/>
+					</span>
+				</div>
+				<div class="justify-content">
+					<div class="SaleDetails_top_div_content">
+						<p id="SaleDetailsAvatar-Turnover-rate"></p>
+						<p>成交率</p>
+					</div>
+				</div>
+				<div class="justify-content">
+					<div class="SaleDetails_top_div_content">
+						<p id="SaleDetailsAvatar-Transaction-order"></p>
+						<p>交易单</p>
+					</div>
+				</div>
+			</div>
+			<ul class="SaleDetails_top_ul">
+				<li><span>价格(CNY)</span><label id="SaleDetailsAvatar-price-o-o"></label>
+					<input type="hidden" id="SaleDetailsAvatar-hid-adid" />
+					<input type="hidden" id="SaleDetailsAvatar-hid-TargetUserID" />
+					<input type="hidden" id="SaleDetailsAvatar-hid-max" />
+					<input type="hidden" id="SaleDetailsAvatar-hid-min" />
+				</li>
+				<li><span>金额(CNY)</span><input id="SaleDetailsAvatar-Amount-o-o" class="SaleDetails2s" type="number" placeholder="限额 10000-50000"><span id="SaleDetails-Amount-o-bnt" onclick="Orderset.SaleDetailsAvatarAmount();">全部</span></li>
+				<li><span>资产(CUBC)</span><input id="SaleDetailsAvatar-Quantity-o-o" name="SaleDetails4s" type="number" placeholder="请输入购买数量"><span id="SaleDetails-Quantity-o-bnt" onclick="Orderset.SaleDetailsAvatarAmount();">全部</span></li>
+				<li><span>资金密码</span><input id="SaleDetailsAvatar-FundPassword-o-o" name="SaleDetails4s" type="password" placeholder="请输入资金密码"></li>
+			</ul>
+			<div class="modify_content">
+				<a class="modify_btn" id="SaleDetailsAvatar-u-btn-t" href="javascript:;">出售</a>
+			</div>
+		</div>
+	</div>
+</div>

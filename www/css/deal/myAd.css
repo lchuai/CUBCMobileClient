@@ -1,0 +1,198 @@
+.pull-to-refresh-height {
+	top: 5.5rem;
+	position: absolute!important;
+}
+
+.f-public {
+	padding-top: 3rem!important;
+}
+
+.content-public-height {
+	padding: 0rem;
+}
+
+.myAdTabHeight {
+	border-top: 0.0625rem solid #f6f6f6;
+	border-bottom: 0.3125rem solid #f6f6f6;
+	position: absolute;
+	width: 103%;
+	top: 2.5rem;
+	left: -0.5rem;
+	/*right: -0.5rem!important;*/
+}
+
+.myAdButton.active {
+	background: #d8c577;
+	font-weight: 400;
+	color: #fff;
+	border: none;
+}
+
+.myAdButton {
+	border: none;
+	color: #b19d4d;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	background-color: #fff;
+}
+
+
+/*列表样式*/
+
+.myAdList {
+	border-bottom: 0.3125rem solid #f6f6f6;
+}
+
+.myAdListContentDetail {
+	padding-top: 0.3rem;
+	margin: 0 0.625rem;
+}
+
+.myAdListContentDetailNoPadding {
+	margin: 0.555rem 0.625rem 0 0.625rem;
+}
+
+.buyAdTitle {
+	height: 1.875rem;
+	line-height: 1.875rem;
+	border-bottom: 0.0625rem solid #e5e5e5;
+}
+
+.myAdTitleSell {
+	color: #00c39c;
+}
+
+.myAdTitle {
+	color: #F99A8B;
+}
+
+.myAdState {
+	float: right;
+}
+
+.buyAdSecondContent {
+	margin-top: 0.3125rem;
+	height: 1.25rem;
+	line-height: 1.25rem;
+	/*padding-bottom: 0.625rem;
+     border-bottom: 0.0625rem solid #e5e5e5;
+     */
+}
+
+.lastContent {
+	padding-bottom: 0.3125rem;
+	border-bottom: 0.0625rem solid #e5e5e5;
+}
+
+.myAdPayType {
+	float: right;
+	margin-left: 0.3125rem;
+	line-height: 1.5625rem;
+}
+
+.myAdPayType img {
+	width: 0.8rem;
+	max-width: 100%;
+}
+
+.myAdTitlePrice {
+	width: 25%;
+	float: left;
+}
+
+.myAdlater {
+	height: 1.25rem;
+	line-height: 1.25rem;
+}
+
+.buyLastContent {
+	height: 2.5rem;
+	line-height: 2.5rem;
+}
+
+.buyLastContent span {
+	float: right;
+}
+
+.adEdit {
+	padding: 0.2rem 0.5rem;
+	border: 1px solid #b19d4d;
+	background-color: white;
+	color: #b19d4d;
+	border-radius: 0.1875rem;
+}
+
+.adEditSell {
+	padding: 0.2rem 0.5rem;
+	border: 1px solid #C6B781;
+	background-color: white;
+	color: #C6B781;
+	border-radius: 0.1875rem;
+	margin-left: 0.625rem;
+}
+
+.ad-Lower-frame {
+	padding: 0.2rem 0.5rem;
+	border: 1px solid #F99A8B;
+	background-color: #fff;
+	color: #F99A8B;
+	border-radius: 0.1875rem;
+	margin-left: 0.625rem;
+}
+
+.ad-Lower-frameSell {
+	padding: 0.2rem 0.5rem;
+	border: 1px solid #00c39c;
+	background-color: white;
+	color: #00c39c;
+	border-radius: 0.1875rem;
+}
+
+.myAd-infinitescroll {}
+
+
+/*tab切换重做开始*/
+
+.myAd_tab_Switch {
+	width: 100%;
+	float: left;
+}
+
+.myAd_tab_Switch>a {
+	width: 50%;
+	float: left;
+	text-align: center;
+	line-height: 2.2rem;
+	height: 2.2rem;
+}
+
+.myAd_tab_Switch>a:nth-child(1) {
+	background-color: #d8c577;
+	color: #fff;
+}
+
+.myAd_tab_Switch>a:nth-child(2) {
+	color: #b19d4d;
+}
+
+.fcfc-public {
+	padding-top: 2.5rem!important;
+}
+
+.myAd_content_Switch {
+	width: 100%;
+	float: left;
+	border-top: 0.3125rem solid #f6f6f6;
+}
+
+.myAd_content_Switch li {
+	float: left;
+	width: 100%;
+}
+
+#myAd_content_Switch_last {
+	display: none;
+}
+
+
+/*tab切换重做结束*/

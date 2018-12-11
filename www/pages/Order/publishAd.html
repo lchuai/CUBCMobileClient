@@ -1,0 +1,209 @@
+<div class="navbar">
+	<div class="navbar-inner">
+
+		<div class="left back-left" id="publishAdBack">
+			<a href="#" class="back link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+
+		<div class="center sliding">发布广告</div>
+		<div class="right" style="margin-right: 0.3rem;">
+			<span>￥</span>
+			<span id="topUnitPrice">0.25</span>
+		</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="publishAd" class="page no-tabbar">
+		<div class="page-content content-bg f-public">
+			<div class="content-block content-public-height">
+				<!-- tabs控制面板 -->
+				<div class="buttons-row myAdTabHeight" style="left: 0;width: 100%;">
+					<!-- 关联到第一个tab, 默认激活 -->
+					<a href="#buyAd" id="buyAdId" class="tab-link active button myAdButton" style="font-size: 0.7rem;">我要购买</a>
+					<!-- 关联到第二个tab -->
+					<a href="#sellAd" id="sellAdId" class="tab-link button myAdButton"><span id="sells">我要出售</span></a>
+
+					<input id="AdID" name="AdID" type="hidden" value="" />
+
+				</div>
+			</div>
+			<!-- Tabs, 标签内容区容器 -->
+			<div class="tabs" style="margin-top: 2rem;">
+				<!-- Tab 1, 默认激活 -->
+				<div id="buyAd" class="tab active">
+					<div class="content-block content-public-height">
+						<div class="myAdlistContent">
+							<div class="myAdList">
+								<div class="myAdListContentDetail publish-content">
+									<div class="FloatingProp">
+										<div class="FloatingPropTitle">浮动比例</div>
+										<div class="FloatingPropContent">
+											<span class="FloatingPropContentInput">
+												<input readonly="readonly" type="number" name="modifys" id="FloatRatio" placeholder="平台浮动比例为0" />
+											</span>
+											<!--<span></span>-->
+										</div>
+									</div>
+									<div class="FloatingPropSecond" style="padding-bottom: 0.4rem;">
+										<div class="toPtranscationPriceTitle">交易价格</div>
+										<div class="transcationPrice" id="UnitPrice">0.25</div>
+									</div>
+								</div>
+							</div>
+							<!--交易数额-->
+							<div class="myAdList">
+								<div class="myAdListContentDetailNoPadding publish-content" style="margin: 0.14rem 0.625rem 0 0.625rem;">
+									<div class="transcationNumTitle">
+										交易数额
+									</div>
+									<div class="transcationNumContent">
+										<div class="min-num">
+											<div class="transcationPriceTitle">最小金额</div>
+											<div class="transcationPrice">
+												<span>￥</span>
+												<span class="transcationPriceInput">
+										    		<input type="number" name="modifys" id="MinRation" placeholder="请输入最小交易金额" />
+										    	</span>
+											</div>
+										</div>
+										<!--最小CUBC-->
+										<div class="min-num" id="minCUBCall">
+											<div class="transcationPriceTitle">最小CUBC</div>
+											<div class="transcationPrice">
+												<span class="transcationCUBC" id="minCUBC">
+										    		0.00000000
+										    	</span>
+											</div>
+										</div>
+										<div class="min-num">
+											<div class="transcationPriceTitle">最大金额</div>
+											<div class="transcationPrice">
+												<span>￥</span>
+												<span class="transcationPriceInput">
+										    		<input type="number" name="modifys" id="MaxRation" placeholder="请输入最大交易金额" />
+										    	</span>
+											</div>
+										</div>
+                                        <!--最大CUBC-->
+                                        <div class="min-num" id="maxCUBCall">
+											<div class="transcationPriceTitle">最大CUBC</div>
+											<div class="transcationPrice">
+												<span class="transcationCUBC" id="maxCUBC">
+										    		0.00000000
+										    	</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--<div class="myAdListContentDetail">
+								<p><span class="color-red regular-width">规则：</span>最小交易金额不能超过<span id="min-buy-money" class="color-red"></span></p>
+								<p class="regular-style">最大交易金额不能超过<span id="max-buy-money" class="color-red"></span></p>
+							</div>-->
+							<ul class="SaleDetails3_flooter_ul PurchaseDetails2_footer_border">
+								<li><img src="img/my/progress-bar3.png" />最小交易金额不能低于<span id="min-money" class="color-orange"></span></li>
+								<li><img src="img/my/progress-bar3.png" />最大交易金额不能超过<span id="max-money" class="color-orange"></span></li>
+							</ul>
+							<div class="publishBtn">
+								<!--<button type="button" href="javascript:void(0);" class="login-btn" id="btnRegistSubmit">发布</button>-->
+								<button id="publishBuyAd" class="login-btn">发布</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Tab 2 -->
+				<div id="sellAd" class="tab">
+					<div class="content-block content-public-height">
+						<div class="myAdlistContent">
+							<div class="myAdList">
+								<div class="myAdListContentDetail publish-content">
+									<div class="FloatingProp">
+										<div class="FloatingPropTitle">浮动比例</div>
+										<div class="FloatingPropContent">
+											<span class="FloatingPropContentInput">
+												<input readonly="readonly" name="modifys" id="FloatSellRatio" type="number" placeholder="平台浮动比例为0" />
+											</span>
+											<!--<span>%</span>-->
+										</div>
+									</div>
+									<div class="FloatingPropSecond" style="padding-bottom: 0.4rem;">
+										<div class="toPtranscationPriceTitle">交易价格</div>
+										<div class="transcationPrice" id="sellUnitPrice">0.25</div>
+									</div>
+								</div>
+							</div>
+							<!--交易数额-->
+							<div class="myAdList">
+								<div class="myAdListContentDetailNoPadding publish-content" style="margin: 0.14rem 0.625rem 0 0.625rem;">
+									<div class="transcationNumTitle">
+										交易数额
+									</div>
+									<div class="transcationNumContent">
+										<div class="min-num">
+											<div class="transcationPriceTitle">最小金额</div>
+											<div class="transcationPrice">
+												<span>￥</span>
+												<span class="transcationPriceInput">
+										    		<input name="modifys" id="MinSellRation" type="number" placeholder="请输入最小交易金额" />
+										    	</span>
+											</div>
+										</div>
+										<!--最小CUBC-->
+										<div class="min-num" id="minCUBCall">
+											<div class="transcationPriceTitle">最小CUBC</div>
+											<div class="transcationPrice">
+												<span class="transcationCUBC" id="minSellCUBC">
+										    		0.00000000
+										    	</span>
+											</div>
+										</div>
+										<div class="min-num">
+											<div class="transcationPriceTitle">最大金额</div>
+											<div class="transcationPrice">
+												<span>￥</span>
+												<span class="transcationPriceInput">
+										    		<input name="modifys" id="MaxSellRation" type="number" placeholder="请输入最大交易金额" />
+										    	</span>
+											</div>
+										</div>
+										<!--最大CUBC-->
+                                        <div class="min-num" id="maxCUBCall">
+											<div class="transcationPriceTitle">最大CUBC</div>
+											<div class="transcationPrice">
+												<span class="transcationCUBC" id="maxSellCUBC">
+										    		0.00000000
+										    	</span>
+											</div>
+										</div>
+										<div class="min-num">
+											<div class="transcationPriceTitle">资金密码</div>
+											<div class="transcationPrice">
+												<span class="transcationPriceInput max-num-width">
+										    		<input name="modifys" id="DealPassword" type="password" placeholder="请输入资金密码" />
+										    	</span>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<!--<div class="myAdListContentDetail">
+								<p><span class="color-red">规则：</span>最小交易金额不能超过<span id="min-sell-money" class="color-red"></span></p>
+								<p class="regular-style">最大交易金额不能超过<span id="max-sell-money" class="color-red"></span></p>
+							</div>-->
+							<ul class="SaleDetails3_flooter_ul PurchaseDetails2_footer_border">
+								<li><img src="img/my/progress-bar3.png" />最小交易金额不能低于<span id="min-sell-money" class="color-orange"></span></li>
+								<li><img src="img/my/progress-bar3.png" />最大交易金额不能超过<span id="max-sell-money" class="color-orange"></span></li>
+							</ul>
+							<div class="publishBtn">
+								<button id="publishSellAd" class="login-btn">发布</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

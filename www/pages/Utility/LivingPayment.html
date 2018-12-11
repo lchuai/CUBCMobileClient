@@ -1,0 +1,72 @@
+<!-- 顶部导航-->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left back-left" id="LivingPayment-index">
+			<a href="javascript:void(0);" class="link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+		<div class="center sliding">生活缴费</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="LivingPayment" class="page no-tabbar payment_style_4s">
+		<div class="page-content hide-bars-on-scroll content-bg payment_style_5s flex_c">
+			<div class="SaleDetails2_Tobepaid">
+				<input type="hidden" id="MyAreaID">
+				<span class="float">新增缴费</span><span style="float: right;" id="JumpCitySelectionxs"></span>
+			</div>
+			<ul class="LivingPayment_Content_icon width">
+				<li onclick="LivingPayment.electricity();"><img src="img/LivingPayment/Electricity_fee.png" />
+					<p>电费</p>
+				</li>
+				<li onclick="LivingPayment.JumpWaterFeeAccount();"><img src="img/LivingPayment/Water_fee.png" />
+					<p>水费</p>
+				</li>
+				<li onclick="LivingPayment.JumpPhonePayment();"><img src="img/LivingPayment/telephone_fee.png" />
+					<p>电话费</p>
+				</li>
+			</ul>
+			<div class="SaleDetails2_Tobepaid">
+				<span>我的缴费</span>
+			</div>
+			<input type="hidden" id="LivingPayment_CostOfLifeIDs" />
+			<div class="list-block">
+				<ul class="LivingPayment_Content_link width" id="LivingPayment_Content_index_ul">
+					<!--<li onclick="LivingPayment.ElectricityFee();">
+					<div>
+						<img src="img/LivingPayment/Electricity_fee_2.png" />
+					</div>
+					<div>
+						<p>电费</p>
+						<p><span>50111111111</span><span>王小二</span></p>
+					</div>
+					<div><img src="img/my/jiantou.png" /></div>
+				</li>
+				<li onclick="LivingPayment.JumpsWaterPayment();">
+					<div>
+						<img src="img/LivingPayment/Water_fee.png" />
+					</div>
+					<div>
+						<p>水费</p>
+						<p><span>50111111111</span><span>王小二</span></p>
+					</div>
+					<div><img src="img/my/jiantou.png" /></div>
+				</li>-->
+					<!--<li>
+					<div>
+						<img src="img/LivingPayment/telephone_fee_2.png" />
+					</div>
+					<div>
+						<p>电话费</p>
+						<p>50111111111<span>王小二</span></p>
+					</div>
+					<div><img src="img/my/jiantou.png" /></div>
+				</li>-->
+				</ul>
+			</div>
+			<div class="modify_content">
+			</div>
+		</div>
+	</div>
+</div>

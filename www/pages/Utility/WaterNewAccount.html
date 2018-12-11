@@ -1,0 +1,64 @@
+<!-- 顶部导航-->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left back-left" id="LivingPayment-WaterNewAccount">
+			<a href="javascript:void(0);" class="link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+		<div class="center sliding">新增水费缴费账户</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="WaterNewAccount" class="page no-tabbar payment_style_4s">
+		<div class="page-content hide-bars-on-scroll content-bg payment_style_5s flex_c">
+			<div class="SaleDetails2_Tobepaid">
+				<div class="NewUserElectricity_containes justify-content float">
+					<img src="img/LivingPayment/Water_fee_2.png" />
+				</div>
+				<div class="float" style="margin-left: 0.5rem;">水费</div>
+				<input type="hidden" id="WaterNewAccount_MyAreaID">
+				<div class="float_r btl_color_h" id="WaterNewAccount_MyAreaName"></div>
+			</div>
+			<ul class="SaleDetails_top_ul SaleDetails_top_ul_change">
+				<input type="hidden" id="WaterNewAccount_hid_inputs" />
+				<li>
+					<span>缴费单位</span>
+					<!--<input id="" name="SaleDetails4s" type="text" placeholder="云南电网有限责任公司">-->
+					<div class="arbitration_ul_relative">
+						<input type="text" id="WaterNewAccount_input_y_e" style="margin-top: 0.3rem;" onclick="LivingPayment.SelectPaymentUnit();" readonly="readonly" name="modifys" placeholder="请选择缴费单位" value="" />
+						<ul class="arbitration_ul_jk" id="WaterNewAccount_ul_pvs_input" style="top: 2.2rem;">
+							<li id="WaterNewAccount_ul_jks_render">
+								<!--<div>asdasdasd</div>
+								<div>啊是大</div>
+								<div>感受到</div>
+								<div>大范甘迪</div>-->
+								<!--<div>巅峰时代</div>
+								<div>豆腐干地方</div>
+								<div>微软史蒂夫</div>
+								<div>是豆腐干豆腐干</div>-->
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li><span>客户编号</span><input style="width: 9rem;" id="WaterNewAccount_Numbering" name="SaleDetails4s" type="number" placeholder="请输入户号" /><span onclick="LivingPayment.HowCheckTheAccount();">如何查户号?</span></li>
+				<li><span>户名</span><input id="WaterNewAccount_AccountName" name="SaleDetails4s" type="text" placeholder="请输入用户名" /></li>
+				<li><span>住址</span><input id="WaterNewAccount_address" name="SaleDetails4s" type="text" placeholder="请输入住址" /></li>
+			</ul>
+			<div class="modify_content">
+				<ul class="NewUserElectricity_footer_comments">
+					<li>
+						<label class="label-checkbox item-content">
+				        <input type="checkbox" name="my-radio" value="1">
+				        <div class="item-media NewUserElectricity_media">
+				          <i class="icon icon-form-checkbox NewUserElectricity_i"></i>
+				        </div>
+      				</label>
+      				<span class="float NewUserElectricity_mspans">我已阅读并同意<span class="btl_color_h" onclick="LivingPayment.SelfPaymentAgreement();">《CUBC自助缴费协议》</span></span>
+					</li>
+				</ul>
+				<a class="modify_btn" href="javascript:;" onclick="LivingPayment.WaterUserConfirmation();">确认</a>
+			</div>
+		</div>
+	</div>
+</div>

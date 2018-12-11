@@ -1,0 +1,80 @@
+<!-- 顶部导航-->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left back-left" id="transactionBack">
+			<a href="javascript:void(0);" class="link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+		<div class="center sliding">交易钱包</div>
+		<div class="right">
+			<a href="javascript:void(0);" onclick="sysIndex.linkTransactionDetail();" class="link">
+				<i class="iconfont icon-jia icon-jia-style"></i>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="transaction" class="page no-tabbar">
+		<div class="page-content infinite-scroll content-bg payment_style_5s SettlementRequest_back" id="transDetailsId">
+			<div class="MerchantWalletIndex_fixed">
+				<div class="MerchantWalletIndex_div_erts width">
+					<dl onclick="MerchantWallets.JumpWalletPayment();">
+						<dt><img src="img/MerchantWallets/Application.png" /></dt>
+						<dd style="color: #4481EB;">付款</dd>
+					</dl>
+					<dl onclick="MerchantWallets.JumpWalletcollection();">
+						<dt><img src="img/MerchantWallets/Receipt.png" /></dt>
+						<dd class="btl_color_l">收款</dd>
+					</dl>
+				</div>
+				<ul class="MerchantWalletIndex_ul_erts_v width">
+					<li>交易钱包CUBC:<span id="myTranscationAssets"></span></li>
+				</ul>
+			</div>
+			<ul class="MerchantWalletIndex_ul_node_v_son transactionBack_ul_erts width" id="TransDetails">
+				<!--暂无明细数据！-->
+				<!--<li class="item-content wallet-item-content">
+							<div class="item-inner power-wallet-list">
+								<div class="item-title-row wallet-item-title">
+									<span class="item-left">100000.0000000</span>
+									<span class="item-right">后台充值</span>
+								</div>
+								<div class="item-title-row wallet-item-title wallet-item-line">
+									<span class="item-left item-left-remark">充值1000元，产生能量值1000</span>
+									<span class="item-right item-left-remark">2018-08-07</span>
+								</div>
+							</div>
+						</li>
+						<li class="item-content wallet-item-content">
+							<div class="item-inner power-wallet-list">
+								<div class="item-title-row wallet-item-title">
+									<span class="item-left">100000.0000000</span>
+									<span class="item-right">后台充值</span>
+								</div>
+								<div class="item-title-row wallet-item-title wallet-item-line">
+									<span class="item-left item-left-remark">充值1000元，产生能量值1000</span>
+									<span class="item-right item-left-remark">2018-08-07</span>
+								</div>
+							</div>
+						</li>
+						<li class="item-content wallet-item-content">
+							<div class="item-inner power-wallet-list">
+								<div class="item-title-row wallet-item-title">
+									<span class="item-left">100000.0000000</span>
+									<span class="item-right">后台充值</span>
+								</div>
+								<div class="item-title-row wallet-item-title wallet-item-line">
+									<span class="item-left item-left-remark">充值1000元，产生能量值1000</span>
+									<span class="item-right item-left-remark">2018-08-07</span>
+								</div>
+							</div>
+						</li>-->
+			</ul>
+			<!-- 加载提示符 -->
+			<div class="infinite-scroll-preloader">
+				<div class="preloader" id="TrasactionLodingScroll"></div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,153 @@
+.top-img{
+}
+ .wallet-top-img{
+     height: 11rem;
+     background-image: url(../img/wallet/walletImg.jpg);
+     background-size: 100% 100%;
+     width: 100%;
+}
+ .top-img img{
+     width: 100%;
+     margin:0rem;
+}
+ .showPeoples{
+     position: relative;top: 8.49rem;
+     height: 2.5rem;
+     color: #fdd07f;
+     line-height: 2.5rem;
+}
+ .labLeft{
+     float: left;
+     margin-left: 4%;
+     line-height: 3.4375rem;
+}
+ .labRight{
+     float: right;
+     margin-right: 4%;
+     line-height: 3.4375rem;
+}
+/*钱包列表样式Start*/
+ .wallet-group{
+     margin: 0.6rem 4%;
+     height: 3.5rem;
+     box-shadow: 0.05rem 0.05rem 0.2rem #808080;
+     padding-left: 0.625rem;
+     border-radius: 0.5rem;
+}
+ .group-a{
+     float: left;
+     width: 40%;
+     margin-top: 0.08rem;
+     height: 3.5rem;
+}
+ .group-a span{
+     line-height: 3.5rem;
+     margin-left: 0.3125rem;
+}
+ .group-a img{
+     width: 1.875rem;
+     height: 1.875rem;
+     margin-top: 0.3125rem;
+}
+ .group-b{
+     float: left;
+     text-align: center;
+     width: 59%;
+     height: 4rem;
+}
+ .moneyNum{
+     line-height: 0.5rem;
+     margin-bottom: 0rem;
+}
+ .moneyFrom{
+     color: gray;
+}
+/*紫色渐变色*/
+ .PurpleChange{
+     background: -webkit-linear-gradient(left, #7b43ec 0% , #c678fd 100%);
+    /* Safari 5.1 - 6.0 */
+     background: -o-linear-gradient(right, #7b43ec 0%, #c678fd 100%);
+    /* Opera 11.1 - 12.0 */
+     background: -moz-linear-gradient(right, #7b43ec 0%, #c678fd 100%);
+    /* Firefox 3.6 - 15 */
+     background: linear-gradient(to right, #7b43ec 0% , #c678fd 100%);
+    /* 标准的语法 */
+     border-radius:50%;
+     width: 2.5rem;
+     height: 2.5rem;
+     text-align: center;
+     float: left;
+     margin-top: 0.4375rem;
+}
+/*蓝色渐变色*/
+ .BlueChange{
+     background: -webkit-linear-gradient(left, #4276ff 0% , #63c4fd 100%);
+    /* Safari 5.1 - 6.0 */
+     background: -o-linear-gradient(right, #4276ff 0%, #63c4fd 100%);
+    /* Opera 11.1 - 12.0 */
+     background: -moz-linear-gradient(right, #4276ff 0%, #63c4fd 100%);
+    /* Firefox 3.6 - 15 */
+     background: linear-gradient(to right, #4276ff 0% , #63c4fd 100%);
+    /* 标准的语法 */
+     border-radius:50%;
+     width: 2.5rem;
+     height: 2.5rem;
+     text-align: center;
+     float: left;
+     margin-top: 0.4375rem;
+}
+ .Energy-value{
+     text-align: right;
+     margin-right: 2.5rem;
+}
+/*绿色渐变色*/
+ .GreenChange{
+     background: -webkit-linear-gradient(left, #20be57 0% , #82f3a6 100%);
+    /* Safari 5.1 - 6.0 */
+     background: -o-linear-gradient(right, #20be57 0%, #82f3a6 100%);
+    /* Opera 11.1 - 12.0 */
+     background: -moz-linear-gradient(right, #20be57 0%, #82f3a6 100%);
+    /* Firefox 3.6 - 15 */
+     background: linear-gradient(to right, #20be57 0% , #82f3a6 100%);
+    /* 标准的语法 */
+     border-radius:50%;
+     width: 2.5rem;
+     height: 2.5rem;
+     text-align: center;
+     float: left;
+     margin-top: 0.4375rem;
+}
+/*橙色渐变色*/
+ .OrgChange{
+     background: -webkit-linear-gradient(left, #f88907 0% , #f8b556 100%);
+    /* Safari 5.1 - 6.0 */
+     background: -o-linear-gradient(right, #f88907 0%, #f8b556 100%);
+    /* Opera 11.1 - 12.0 */
+     background: -moz-linear-gradient(right, #f88907 0%, #f8b556 100%);
+    /* Firefox 3.6 - 15 */
+     background: linear-gradient(to right, #f88907 0% , #f8b556 100%);
+    /* 标准的语法 */
+     border-radius:50%;
+     width: 2.5rem;
+     height: 2.5rem;
+     text-align: center;
+     float: left;
+     margin-top: 0.4375rem;
+}
+/*钱包详细页样式*/
+.IntelligenceDetailedtop{
+	border-bottom: 5px solid #e9e9e9;
+}
+.IntelligenceDetailedbottom{
+}
+.item-after-color{
+	font-size: 1.75rem;
+	color: #000000!important;
+}
+.IntelligenceDetailedul{
+	padding: 0.5rem 0rem !important;
+}
+.list-block-label-height{
+	margin: 0px !important;
+}
+ 

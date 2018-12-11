@@ -1,0 +1,85 @@
+<!-- 顶部导航-->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left back-left" id="LivingPayment-TelephonePayment">
+			<a href="javascript:void(0);" class="link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+		<div class="center sliding">电话缴费</div>
+		<div class="right close-picker" id="TelephonePaymentRight">
+			<a href="javascript:void(0);" class="link link-filter">
+				<i class="f7-icons">menu</i>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="TelephonePayment" class="page no-tabbar payment_style_4s">
+		<div class="page-content hide-bars-on-scroll content-bg payment_style_5s flex_c">
+			<input type="hidden" id="TelephonePayment_yys_id_y" />
+			<ul class="SaleDetails_top_ul SaleDetails_top_ul_change">
+				<li>
+					<span>运营商</span>
+					<div class="arbitration_ul_relative TelephonePayment_ul_relative">
+						<input type="text" id="TelephonePayment_inputs_xs" style="margin-top: 0.3rem;" onclick="LivingPayment.SelectCarrier();" readonly="readonly" name="modifys" placeholder="请选择运营商" value="" />
+						<ul class="arbitration_ul_jk" id="TelephonePayment_ul_plus" style="top: 2.2rem;">
+							<li id="TelephonePayment_inputs_texts_xs">
+								<!--<div>中国电信</div>
+								<div>中国移动</div>
+								<div>中国联通</div>-->
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li><span>手机号</span><input class="TelephonePayment_inputs_iphones_plus text-c" id="TelephonePayment_tel_ert" name="SaleDetails4s" type="number" placeholder="请输入手机号"></li>
+				<li>
+					<span>充值金额</span>
+					<div class="arbitration_ul_relative TelephonePayment_ul_relative_son">
+						<input type="text" id="TelephonePayment_inputs_son" style="margin-top: 0.3rem;" onclick="LivingPayment.SelectRechargeAmount();" readonly="readonly" name="modifys" placeholder="请选择充值金额" value="" />
+						<ul class="arbitration_ul_jk" id="TelephonePayment_ul_miniplus" style="top: 2.2rem;">
+							<li id="TelephonePayment_inputs_texts_son">
+								<div>10</div>
+								<div>20</div>
+								<div>30</div>
+								<div>50</div>
+								<div>100</div>
+								<div>200</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+			<div class="ElectricityFee_content">
+				<div class="SaleDetails2_Tobepaid_2s">
+					<ul class="SaleDetails2_Tobepaid_2s_ul_1s ElectricityFee_ul_1s">
+						<li style="height: 4rem;">
+							<div>可用CUBC</div>
+							<div>所需CUBC</div>
+						</li>
+					</ul>
+					<ul class="SaleDetails2_Tobepaid_2s_ul_2s ElectricityFee_ul_2s">
+						<li style="height: 4rem;">
+							<div class="btl_color_l" id="TelephonePayment_TransAssets_u"></div>
+							<div class="btl_color_red" id="TelephonePayment_AmountOfCost_e"><span class="btl_color_999">（录入充值金额自动计算）</span></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="modify_content">
+				<!--<ul class="NewUserElectricity_footer_comments">
+					<li>
+						<label class="label-checkbox item-content">
+				        <input type="checkbox" name="my-radio" value="1">
+				        <div class="item-media NewUserElectricity_media">
+				          <i class="icon icon-form-checkbox NewUserElectricity_i"></i>
+				        </div>
+				        <span class="float NewUserElectricity_mspans">我已阅读并同意<span class="btl_color_h">《CUBC自助缴费协议》</span></span>
+      				</label>
+					</li>
+				</ul>-->
+				<a class="modify_btn" href="javascript:;" onclick="LivingPayment.TelephonePaymentConfirmation();">确认</a>
+			</div>
+		</div>
+	</div>
+</div>

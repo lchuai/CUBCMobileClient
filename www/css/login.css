@@ -1,0 +1,190 @@
+ /*.navbar{
+     height: 2.5rem;
+     background: #fff;
+     box-shadow: 0.01rem 0.01rem 0.1rem #E5E5E5;
+}*/
+ 
+ .login-logo {
+ 	width: 100%;
+ 	height: 7.1rem;
+ 	margin-top: 2.7rem;
+ 	text-align: center;
+ }
+ 
+ .about-logo {
+ 	margin-top: 5rem!important;
+ }
+ 
+ .login-logo img {
+ 	width: 3.6rem;
+ 	margin: 0rem auto;
+ }
+ 
+ .login-form {
+ 	/* margin-top: 1.875rem;*/
+ }
+ 
+ .login-form-group {
+ 	width: 80%;
+ 	margin: 0px auto;
+ }
+ 
+ .regist-form-puls {
+ 	margin-top: 2.5rem;
+ }
+ 
+ .form-control {
+ 	height: 1.25rem!important;
+ 	border-radius: 0.3125rem;
+ 	border: 1px solid #ececec!important;
+ }
+ 
+ .register-form {
+ 	width: 90%;
+ 	padding: 0.35rem 0.8rem;
+ 	margin-bottom: 0;
+ }
+ 
+ .update-form-control {
+ 	height: 1.25rem!important;
+ 	border-radius: 0.3125rem;
+ 	border: 1px solid #ececec!important;
+ }
+ 
+ .phone-number {
+ 	margin-bottom: 0.9rem;
+ }
+ 
+ .login-forget-password a {
+ 	text-align: left;
+ 	color: #333;
+ }
+ 
+ .login-forget-password {
+ 	margin-bottom: 2.2rem;
+ 	margin-top: -0.5rem;
+ }
+ 
+ .login-regist a {
+ 	color: #b9a159;
+ }
+ 
+ .login-form-btn {
+ 	padding: 1.875rem 0rem;
+ 	text-align: center;
+ }
+ 
+ .loginPhoneLogo img {
+ 	width: 0.9375rem;
+ 	padding-right: 0.3125rem;
+ 	border-right: 0.125rem solid #ab8f4b;
+ }
+ 
+ .loginPhoneLogo {
+ 	position: relative;
+ 	top: 1.8rem;
+ 	left: 0.5rem;
+ }
+ 
+ .loginPasswordLogo {
+ 	position: relative;
+ 	top: -1.58rem;
+ 	left: 0.5rem;
+ }
+ 
+ .loginPasswordLogo img {
+ 	width: 0.9375rem;
+ 	padding-right: 0.3125rem;
+ 	border-right: 0.125rem solid #ab8f4b;
+ }
+ 
+ .login-form-control {
+ 	width: 83%!important;
+ 	padding-left: 2.5rem!important;
+ 	line-height: 1.25rem!important;
+ 	height: 1.25rem!important;
+ 	padding-top: 0.414rem!important;
+ 	padding-bottom: 0.414rem!important;
+ }
+ 
+ .link-cancel {
+ 	color: #b9a159;
+ }
+ 
+ .login-btn {
+ 	text-align: center;
+ 	margin: 0px auto;
+
+ 	color: #fff;
+ 	width: 80%;
+ 	height: 2.2rem;
+ 	line-height: 2.2rem;
+ 	border-radius: 3.125rem;
+ 	border: none;
+ 	background: -webkit-linear-gradient(left, #7b43ec 0%, #c678fd 100%);
+ 	/* Safari 5.1 - 6.0 */
+ 	background: -o-linear-gradient(right, #7b43ec 0%, #c678fd 100%);
+ 	/* Opera 11.1 - 12.0 */
+ 	background: -moz-linear-gradient(right, #7b43ec 0%, #c678fd 100%);
+ 	/* Firefox 3.6 - 15 */
+ 	background: linear-gradient(to right, #b9a159 0%, #ceb86d 100%);
+ 	/* 标准的语法 */
+ }
+ 
+ .btn-width {
+ 	width: 100%;
+ 	height: 2.5rem;
+ }
+ 
+ .banding-btn {
+ 	width: 15.625rem!important;
+ }
+ 
+ .login-regist {
+ 	text-align: center;
+ 	margin-top: 1rem;
+ }
+ 
+ [name=modifys]::-webkit-input-placeholder {
+ 	/* WebKit, Blink, Edge */
+ 	color: #777;
+ 	font-size: 0.7rem;
+ }
+ 
+ [name=modifys]:-moz-placeholder {
+ 	/* Mozilla Firefox 4 to 18 */
+ 	color: #777;
+ 	font-size: 0.7rem;
+ }
+ 
+ [name=modifys]::-moz-placeholder {
+ 	/* Mozilla Firefox 19+ */
+ 	color: #777;
+ 	font-size: 0.7rem;
+ }
+ 
+ [name=modifys]:-ms-input-placeholder {
+ 	/* Internet Explorer 10-11 */
+ 	color: #777;
+ 	font-size: 0.7rem;
+ }
+ 
+ .regist-5s {
+ 	margin-top: 1.9rem;
+ }
+ 
+ .login-logo-heigth {
+ 	height: 6rem;
+ }
+ 
+ .about-logo-4s img {
+ 	width: 8rem;
+ }
+ 
+ .phone-number-2rem {
+ 	margin-top: 1.5rem;
+ }
+ 
+ .Reset-btns-my {
+ 	margin: 2rem auto!important;
+ }

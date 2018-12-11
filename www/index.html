@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+
+		<!-- Required meta tags-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<link href="img/public/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+		<!-- Your app title -->
+		<title>币通链</title>
+
+		<!--框架基础样式-->
+		<link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+		<link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+
+		<!--字体样式-->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/framework7-icons.css">
+		<link rel="stylesheet" href="css/iconfont/iconfont.css" />
+
+		<!--弹出层样式-->
+		<link rel="stylesheet" href="lib/layer/layer.css">
+
+		<!--系统公共样式-->
+		<link rel="stylesheet" href="css/public.css">
+
+		<!--系统样式-->
+		<!--	<link rel="stylesheet" href="css/styles.css">-->
+		<!--页面样式-->
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/wallet.css">
+		<link rel="stylesheet" href="css/shop.css">
+		<link rel="stylesheet" href="css/myindex.css">
+
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/register.css " />
+		<link rel="stylesheet" href="css/ResetPassword.css" />
+		<link rel="stylesheet" href="css/VerifyPassword.css" />
+		<link rel="stylesheet" href="css/about.css" />
+		<link rel="stylesheet" href="css/help.css" />
+		<link rel="stylesheet" href="css/myQuestionList.css" />
+		<link rel="stylesheet" href="css/editQuestion.css" />
+		<link rel="stylesheet" href="css/invite.css" />
+		<link rel="stylesheet" href="css/powerWalletDetail.css" />
+		<link rel="stylesheet" href="css/deal/myAd.css" />
+		<link rel="stylesheet" href="css/deal/publishAd.css" />
+		<link rel="stylesheet" href="css/Order.css" />
+		<link rel="stylesheet" href="css/payment.css" />
+		<link rel="stylesheet" href="css/modify.css" />
+		<link rel="stylesheet" href="css/LivingPayment.css" />
+		<link rel="stylesheet" href="css/my/MerchantWallet.css" />
+		<!--扫描页面样式-->
+		<link rel="stylesheet" href="css/my/scan.css" />
+	</head>
+
+	<body>
+		<!-- Status bar overlay for full screen mode (PhoneGap) -->
+		<div class="statusbar-overlay"></div>
+
+		<!-- Views -->
+		<div class="views">
+			<!-- Your main view, should have "view-main" class -->
+			<div class="view view-main">
+				<!-- Top Navbar-->
+				<div class="navbar">
+					<div class="navbar-inner" style="padding: 0;">
+						<!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+						<div class="center sliding" id="divTitle" style="transform: translate3d(0px, 0px, 0px);">首页</div>
+						<div class="right" id="OrderRight" style="display: none;margin-right: 0.35rem;">
+							<a href="javascript:void(0);" onclick="sysIndex.linkpublishAd(0)" class="link link-add">
+								<i class="iconfont icon-jia"></i>
+								<!--<i class="f7-icons">add</i>
+								<i class="f7-icons">filter</i>-->
+							</a>
+						</div>
+
+						<div class="subnavbar myOrder_div_father" id="Switch_transaction_orders">
+							<span id="OrderBuy-index" class="buy_ios">购买</span>
+							<span id="OrderSell-index" class="sell_ios">出售</span>
+							<span class="Order_ios" onclick="sysIndex.linkOrder();">订单</span>
+							<span class="advertising_ios" onclick="sysIndex.linkAd()">我的广告</span>
+							<div class="Today_CUBC">
+								<span>今日CUBC价格</span><span id="TodaySprice_price_o">￥0.15</span>
+							</div>
+						</div>
+
+						<!--<div class="myOrder_div_father" id="Switch_transaction_orders">
+							<span id="OrderBuy-index" class="buy_ios">购买</span>
+							<span id="OrderSell-index" class="sell_ios">出售</span>
+							<span class="Order_ios" onclick="sysIndex.linkOrder();">订单</span>
+							<span class="advertising_ios" onclick="sysIndex.linkAd()">我的广告</span>
+							<div class="Today_CUBC">
+								<span>今日CUBC价格</span><span id="TodaySprice_price_o">￥0.15</span>
+							</div>
+						</div>-->
+					</div>
+				</div>
+				<!--显示点击的是哪一个字母-->
+				<div id="showLetter" class="showLetter"><span>A</span></div>
+				<!--城市索引查询-->
+				<div class="letter">
+					<ul>
+						<!--<li>
+						<a href="javascript:;">热门</a>
+					</li>-->
+						<li>
+							<a href="javascript:;">A</a>
+						</li>
+						<li>
+							<a href="javascript:;">B</a>
+						</li>
+						<li>
+							<a href="javascript:;">C</a>
+						</li>
+						<li>
+							<a href="javascript:;">D</a>
+						</li>
+						<li>
+							<a href="javascript:;">E</a>
+						</li>
+						<li>
+							<a href="javascript:;">F</a>
+						</li>
+						<li>
+							<a href="javascript:;">G</a>
+						</li>
+						<li>
+							<a href="javascript:;">H</a>
+						</li>
+						<li>
+							<a href="javascript:;">J</a>
+						</li>
+						<li>
+							<a href="javascript:;">K</a>
+						</li>
+						<li>
+							<a href="javascript:;">L</a>
+						</li>
+						<li>
+							<a href="javascript:;">M</a>
+						</li>
+						<li>
+							<a href="javascript:;">N</a>
+						</li>
+						<li>
+							<a href="javascript:;">P</a>
+						</li>
+						<li>
+							<a href="javascript:;">Q</a>
+						</li>
+						<li>
+							<a href="javascript:;">R</a>
+						</li>
+						<li>
+							<a href="javascript:;">S</a>
+						</li>
+						<li>
+							<a href="javascript:;">T</a>
+						</li>
+						<li>
+							<a href="javascript:;">W</a>
+						</li>
+						<li>
+							<a href="javascript:;">X</a>
+						</li>
+						<li>
+							<a href="javascript:;">Y</a>
+						</li>
+						<li>
+							<a href="javascript:;">Z</a>
+						</li>
+					</ul>
+				</div>
+				<!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+				<div class="pages navbar-through toolbar-through">
+					<!-- Page, "data-page" contains page name -->
+					<div data-page="index" class="page">
+						<!-- Scrollable page content -->
+						<div class="page-content content-bg">
+							<!-- Tabs容器, 需要带有"tabs"类。必需元素 -->
+							<!--<div class="tabs">-->
+							<!-- 第一个tab, 需要带有"tab"类和唯一的id -->
+							<!-- 第一个tab默认是激活显示状态，通过添加"active"类实现 -->
+							<!--<div class="tab active" id="tabhome">-->
+							<div class="swiper-container index-swiper" id="index_swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img src="img/index/banner1.jpg" /></div>
+									<div class="swiper-slide"><img src="img/index/banner2.jpg" /></div>
+									<div class="swiper-slide"><img src="img/index/banner3.jpg" /></div>
+								</div>
+								<div class="swiper-pagination"></div>
+								<!--//这是轮播图页码下标，根据轮播页面数自动生成、自动跟随页面切换而变换-->
+							</div>
+							<div class="index-information">
+								<div class="information-detail">
+									<i class="iconfont icon-laba laba"></i>
+									<span id="spNotice">系统新版本上线通知</span>
+								</div>
+							</div>
+							<div class="marqueeAll" id="marqueeAll">
+								<div class="marqueeLeft">
+									<!--<img src="img/index/NewTranscation.png" />-->
+									<!--<img class="imgicon" src="img/index/Order-activ.png">-->
+									<span>最新交易</span>
+
+								</div>
+								<div id="Marquee">
+									<!--<div class="marqueeClass row">
+										<div class="fist-width col-7">未来已来1</div>
+										<div class="second-width-Exp col-70">购买了138.55225612 CUBC</div>
+										<div class="third-width col-23">2018-11-22</div>
+									</div>-->
+								</div>
+							</div>
+							<div class="index_swiper2" id="Index_NewBusiness" style="display: none;">
+								<div class="marqueeLeft newbusiness">
+									<span>最新商家</span>
+
+								</div>
+								<div class="swiper-container index-swiper-2" id="index_swiper2">
+									<div class="swiper-wrapper" id="index_swiper_2_set">
+										<!--<div class="swiper-slide index_slide_2" onclick="indexSub.JumpHomeCarouselDetails()">
+											<dl class="index_slide_2_dl">
+												<dt><img src="img/index/banner1.jpg" /></dt>
+												<dd>我是小胖子</dd>
+											</dl>
+										</div>										-->
+									</div>
+								</div>
+							</div>
+							<div class="index-content index-content-firstval ">
+								<div class="index-content-title same-style">
+									<div class="index-content-word">
+										<span>行业资讯</span>
+										<span class="index-news-more-right" onclick="sysIndex.linkNewsContent()">更多</span>
+									</div>
+								</div>
+								<div class="index-news-all-line" id="Information"></div>
+							</div>
+							<div class="index-content">
+								<div class="index-content-title same-style">
+									<div class="index-content-word">
+										<span>最新注册用户</span>
+									</div>
+								</div>
+								<div id="divUserInfoLis"></div>
+							</div>
+							
+							<div class="index-new-business">
+								
+							</div>
+						</div>
+					</div>
+					<div class="page cached" data-page="Switch_Order">
+						<div class="page-content infinite-scroll pull-to-refresh-content" id="buyListOrders">
+							<div class="pull-to-refresh-layer pull-to-refresh-abslute">
+								<div class="preloader"></div>
+								<!--<div class="pull-to-refresh-arrow"></div>-->
+							</div>
+							<div class="myOrder_ul_father_1s" id="displays" data-distance="100">
+								<div class="heihtg_5rem"></div>
+								<div id="BuytodaySprice_buy"></div>
+							</div>
+							<div class="infinite-scroll-preloader" id="order_preloader">
+								<div class="preloader" style="margin-top: 0.32rem;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="page cached" data-page="Switch_Order_sell">
+						<div class="page-content pull-to-refresh-content" id="sellListOrders">
+							<div class="pull-to-refresh-layer pull-to-refresh-abslute">
+								<div class="preloader"></div>
+								<!--<div class="pull-to-refresh-arrow"></div>-->
+							</div>
+							<div class="heihtg_5rem"></div>
+							<div id="TransactionForsale-7s"></div>
+						</div>
+					</div>
+					<div class="page cached" data-page="Modify_wallet">
+						<div class="page-content pull-to-refresh-content" id="Modify_wallet_refresh_S">
+							<div class="pull-to-refresh-layer">
+								<div class="preloader"></div>
+								<!--<div class="pull-to-refresh-arrow"></div>-->
+							</div>
+							<div class="top-img wallet-top-img">
+								<div class="showPeoples">
+									<lable class="labLeft">今日CUBC价格</lable><label class="labRight" id="User2count"></label>
+								</div>
+							</div>
+
+							<div class="middel-content">
+								<div class="list-group wallet-group">
+									<div class="group-a">
+										<div class="PurpleChange">
+											<img src="img/wallet/allmoney.png">
+										</div>
+										<span>钱包总资产</span>
+									</div>
+									<div class="group-b">
+										<p class="moneyNum" id="WalletSumAssets">0.00000000</p>
+										<p class="moneyFrom">From Block Operations</p>
+									</div>
+								</div>
+								<div class="list-group wallet-group" onclick="sysIndex.linkAssetsDetail();">
+									<div class="group-a">
+										<div class="GreenChange">
+											<img src="img/wallet/money.png">
+										</div>
+										<span>母币钱包</span>
+									</div>
+									<div class="group-b">
+										<p class="moneyNum" id="WalletRootAssets">0.00000000</p>
+										<p class="moneyFrom">From Block Operations</p>
+									</div>
+
+								</div>
+
+								<div class="list-group wallet-group" onclick="sysIndex.linkRease();">
+									<div class="group-a">
+										<div class="OrgChange">
+											<img src="img/wallet/release.png">
+										</div>
+										<span>释放钱包</span>
+									</div>
+									<div class="group-b">
+										<p class="moneyNum" id="IReleaseDetails">0.00000000</p>
+										<p class="moneyFrom">From Block Operations</p>
+									</div>
+
+								</div>
+								<div class="list-group wallet-group" onclick="sysIndex.linkIntelligence();">
+									<div class="group-a">
+										<div class="BlueChange">
+											<img src="img/wallet/Intelligence.png">
+										</div>
+										<span>糖果派送</span>
+									</div>
+									<div class="group-b">
+										<p class="moneyNum" id="SugarAssets">0.00000000</p>
+										<p class="moneyFrom">From Block Operations</p>
+									</div>
+
+								</div>
+								<div class="list-group wallet-group" onclick="sysIndex.linklink();">
+									<div class="group-a">
+										<div class="GreenChange">
+											<img src="img/wallet/linkico.png">
+										</div>
+										<span>线性奖励</span>
+									</div>
+									<div class="group-b">
+										<p class="moneyNum" id="LinerRewordAssets">0.00000000</p>
+										<p class="moneyFrom">From Block Operations</p>
+									</div>
+
+								</div>
+								<div class="list-group wallet-group" onclick="sysIndex.linkPowerDetail();">
+									<div class="group-a">
+										<div class="BlueChange">
+											<img src="img/wallet/energy.png">
+										</div>
+										<span>能量值</span>
+									</div>
+									<div class="group-b">
+										<p class="moneyNum" id="EnergyValue">0.00</p>
+										<p class="moneyFrom">From Block Operations</p>
+									</div>
+								</div>
+								<div class="list-group wallet-group" onclick="sysIndex.linkShopping();">
+									<div class="group-a">
+										<div class="PurpleChange">
+											<img src="img/wallet/shopping.png">
+										</div>
+										<span>消费钱包</span>
+									</div>
+									<div class="group-b">
+										<p class="moneyNum" id="ShopingAsstes">0.00000000</p>
+										<p class="moneyFrom">From Block Operations</p>
+									</div>
+
+								</div>
+								<div class="list-group wallet-group" onclick="sysIndex.linkTransaction();">
+									<div class="group-a">
+										<div class="BlueChange">
+											<img src="img/wallet/transaction.png">
+										</div>
+										<span>交易钱包</span>
+									</div>
+									<div class="group-b">
+										<div class="blue-word">
+											<p class="moneyNum" id="TransAssets">0.00000000</p>
+											<p class="moneyFrom">From Block Operations</p>
+										</div>
+									</div>
+								</div>
+								<div class="list-group wallet-group" onclick="sysIndex.linkLivingPayment();">
+									<div class="group-a">
+										<div class="GreenChange">
+											<img src="img/wallet/costoflife.png">
+										</div>
+										<span>生活缴费</span>
+									</div>
+									<div class="group-b">
+										<div class="blue-word">
+											<p class="moneyNum" id="">点击进入生活缴费</p>
+											<p class="moneyFrom">Access to living expenses</p>
+										</div>
+									</div>
+								</div>
+								<div class="list-group wallet-group"  id="BusinessPurse" onclick="MerchantWallets.JumpMerchantWallet();">
+									<div class="group-a">
+										<div class="BlueChange">
+											<img src="img/wallet/transaction.png">
+										</div>
+										<span>商家钱包</span>
+									</div>
+									<div class="group-b">
+										<div class="blue-word">
+											<p class="moneyNum" id="BusinessAssets">0.00000000</p>
+											<p class="moneyFrom">From Block Operations</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="page cached" data-page="Modify_Mall">
+						<div class="page-content">
+							<div class="top-img"><img src="img/shop/shopIndex.png"></div>
+							<div class="txtContent">
+								<p>全球第一个区块链数字商城正在开发中，敬请期待！</p>
+							</div>
+						</div>
+					</div>
+					<div class="page cached" data-page="Modify_mine">
+						<div class="page-content">
+							<div class="personel-all">
+								<div class="list-block">
+									<ul>
+										<li class="personel-list personel-update-list">
+											<a href="pages/my/updateNickName.html"></a>
+											<a href="javascript:void(0);" onclick="sysIndex.linkUpdatePersonelInfo();" class="item-link item-content">
+												<div class="item-media item-personel-media">
+													<img id="img_btl_head" src="img/my/nickName.png" />
+												</div>
+												<div class="item-inner item-personel-inner">
+													<div id="divIndexUserNick" class="item-title">修改个人信息</div>
+													<div class="item-after personel-list-item-after"></div>
+												</div>
+											</a>
+										</li>
+										<li class="personel-list">
+											<a href="javascript:void(0);" onclick="sysIndex.linkRealname();" class="item-link item-content">
+												<div class="item-media same-icon-style">
+													<img src="img/my/myVertify.png" />
+												</div>
+												<div class="item-inner">
+													<div class="item-title item-font">实名认证</div>
+													<div id="divIndexDPIStatus" class="item-after personel-list-item-after item-font">已认证</div>
+												</div>
+											</a>
+										</li>
+										<li class="personel-list">
+											<a href="javascript:void(0);" onclick="sysIndex.linkInvite();" class="item-link item-content">
+												<div class="item-media same-icon-style">
+													<img src="img/my/myInvite.png" />
+												</div>
+												<div class="item-inner">
+													<div class="item-title personel-list-item-title item-font">邀请好友</div>
+													<div class="item-after personel-list-item-after"></div>
+												</div>
+											</a>
+										</li>
+										<li class="personel-list">
+											<a href="javascript:void(0);" onclick="sysIndex.linkBindMobile();" class="item-link item-content">
+												<div class="item-media same-icon-style">
+													<img src="img/my/myBangding.png" />
+												</div>
+												<div class="item-inner">
+													<div class="item-title item-font">绑定手机号</div>
+													<div id="divIndexIsBaindPhone" class="item-after personel-list-item-after item-font">已绑定</div>
+												</div>
+											</a>
+										</li>
+										<li class="personel-list">
+											<a href="javascript:void(0);" onclick="sysIndex.linkResetPassword();" class="item-link item-content">
+												<div class="item-media same-icon-style">
+													<img src="img/my/myResert.png" />
+												</div>
+												<div class="item-inner">
+													<div class="item-title item-font">重置登录密码</div>
+													<div class="item-after personel-list-item-after"></div>
+												</div>
+											</a>
+										</li>
+										<li class="personel-list">
+											<a href="javascript:void(0);" onclick="sysIndex.linkAbout();" class="item-link item-content">
+												<div class="item-media same-icon-style">
+													<img src="img/my/myAbout.png" />
+												</div>
+												<div class="item-inner">
+													<div class="item-title item-font">关于我们</div>
+													<div class="item-after personel-list-item-after"></div>
+												</div>
+											</a>
+										</li>
+										<li class="personel-list">
+											<a href="javascript:void(0);" onclick="sysIndex.linkpayment();" class="item-link item-content">
+												<div class="item-media same-icon-style">
+													<img src="img/my/payment.png" />
+												</div>
+												<div class="item-inner">
+													<div class="item-title item-font">收付款设置</div>
+													<div class="item-after personel-list-item-after"></div>
+												</div>
+											</a>
+										</li>
+										<li class="personel-list">
+											<a href="javascript:void(0);" onclick="sysIndex.linkmodify();" class="item-link item-content">
+												<div class="item-media same-icon-style">
+													<img src="img/my/modify.png" />
+												</div>
+												<div class="item-inner">
+													<div class="item-title item-font" id="MysetfundPassword">修改资金密码</div>
+													<div class="item-after personel-list-item-after"></div>
+												</div>
+											</a>
+										</li>
+										<li class="personel-list">
+											<a href="javascript:void(0);" onclick="sysIndex.linkHelp();" class="item-link item-content">
+												<div class="item-media same-icon-style">
+													<img src="img/my/myHelp.png" />
+												</div>
+												<div class="item-inner">
+													<div class="item-title item-font">帮助信息</div>
+													<div class="item-after personel-list-item-after"></div>
+												</div>
+											</a>
+										</li>
+										<li class="personel-list" onclick="sysMy.exit();">
+											<a href="#" class="item-link item-content">
+												<div class="item-media same-icon-style">
+													<img src="img/my/myExit.png" />
+												</div>
+												<div class="item-inner">
+													<div class="item-title item-font">退出登录</div>
+													<div class="item-after personel-list-item-after"></div>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Bottom Toolbar-->
+				<div id="sys-toolbar" class="toolbar tabbar tabbar-labels">
+					<div class="toolbar-inner">
+						<a href="javascript:void(0);" class="tab-link activetoolbar" id="indexlink">
+							<img class="imgicon" src="img/index/home-activ.png">
+							<span class="tabbar-label">首页</span>
+						</a>
+						<a href="javascript:void(0);" class="tab-link" id="Orderlink">
+							<img class="imgicon" src="img/index/Order.png">
+							<span class="tabbar-label">交易</span>
+						</a>
+						<a href="javascript:void(0);" class="tab-link" id="walletlink">
+							<img class="imgicon" src="img/index/wallet.png">
+							<span class="tabbar-label">钱包</span>
+						</a>
+						<a href="javascript:void(0);" class="tab-link" id="shoplink">
+							<img class="imgicon" src="img/index/shop.png">
+							<span class="tabbar-label">商城</span>
+						</a>
+						<a href="javascript:void(0);" class="tab-link" id="mylink">
+							<img class="imgicon" src="img/index/my.png">
+							<span class="tabbar-label">我的</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="cordova.js"></script>
+
+		<!--jquery和初始 加载-->
+		<script type="text/javascript" src="lib/jQuery/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="lib/initLoad.js"></script>
+
+		<!--f7框架js 加载-->
+		<script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+
+		<!--vue框架 加载-->
+		<!--<script type="text/javascript" src="lib/vue.js"></script>-->
+
+		<!--mui框架js 加载-->
+		<script type="text/javascript" src="js/mui.min.js"></script>
+
+		<!--移至初始化绑定中 加载-->
+		<script type="text/javascript" src="lib/layer/layer.js"></script>
+
+		<!-- 币通链基础库 Lib -->
+		<script type="text/javascript" src="js/core/sys-params.js"></script>
+
+		<!-- 网络通信单元代码 -->
+		<script type="text/javascript" src="js/core/sys-util.js"></script>
+
+		<!-- f7框架js -->
+		<script type="text/javascript" src="js/my-app.js"></script>
+
+		<!-- 页面对应js -->
+		<script type="text/javascript" src="js/common/sysindex.js"></script>
+		<script type="text/javascript" src="js/common/raceLamp.js"></script>
+		<script type="text/javascript" src="js/common/wallet.js"></script>
+		<script type="text/javascript" src="js/common/shop.js"></script>
+		<script type="text/javascript" src="js/common/myindex.js"></script>
+		<script type="text/javascript" src="js/common/my/InviteUser.js"></script>
+		<script type="text/javascript" src="js/common/my/help.js"></script>
+		<script type="text/javascript" src="js/common/indexSub.js"></script>
+		<script type="text/javascript" src="js/common/Order/myAd.js"></script>
+		<script type="text/javascript" src="js/common/my/Alipay.js"></script>
+		<script type="text/javascript" src="js/common/my/Order.js"></script>
+		<script type="text/javascript" src="js/common/my/LivingPayment.js"></script>
+		<script type="text/javascript" src="js/common/my/MerchantWallet.js"></script>
+		<script type="text/javascript" src="js/core/newscan.js"></script>
+		<!--<script type="text/javascript" src="js/core/scan.js"></script>
+		<script type="text/javascript" src="js/core/scan_dom.js"></script>-->
+		<!--<script type="text/javascript" src="js/common/my/city.js"></script>-->
+		<!--城市选择插件加载-->
+		<script type="text/javascript" src="js/common/my/zepto.js"></script>
+
+		<!-- 支持在手机浏览或浏览器浏览的js -->
+		<script type="text/javascript" src="js/sys-app.js"></script>
+
+	</body>
+
+</html>

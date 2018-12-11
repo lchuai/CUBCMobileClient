@@ -1,0 +1,491 @@
+/*全局样式*/
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0.7rem;
+}
+
+img {
+	border: none;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/*顶部导航栏样式*/
+
+.navbar {
+	height: 2.5rem;
+	background: #fff;
+	box-shadow: 0.01rem 0.01rem 0.1rem #E5E5E5;
+}
+
+.navbar:after {
+	background-color: initial;
+}
+
+.index_x_titles {
+	font-size: 0.93rem;
+	font-weight: 600;
+	text-align: center;
+	width: 100%;
+}
+
+
+/*顶部导航栏样式完*/
+
+
+/*底部导航栏样式*/
+
+.navbar .center {
+	font-size: 0.93rem;
+}
+
+.toolbar:before {
+	background-color: initial;
+}
+
+.tabbar-label {
+	font-size: 0.7rem!important;
+}
+
+.toolbar {
+	background: white;
+	box-shadow: 0.05rem 0.05rem 0.5rem #E5E5E5;
+}
+
+
+/*轮播图样式*/
+
+.top-banner-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.slider-index {
+	font-size: 0rem;
+}
+
+.index-swiper {
+	height: 10rem;
+}
+
+.index-swiper-2 {
+	height: 8rem;
+	padding-top: 1rem;
+}
+
+.index_slide_2 {
+	box-sizing: border-box;
+	padding: 0 0.15rem;
+}
+
+.index_slide_2_dl {
+	text-align: center;
+}
+
+.index_slide_2_dl dt {
+	height: 6rem;
+}
+
+.index_slide_2_dl dd {
+	padding: 0.3rem 0;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.index_slide_2_dl img {
+	height: 6rem;
+	max-height: 100%;
+}
+
+
+/*轮播详情页开始*/
+
+.HomeCarouselDetails_ul_ertd {
+	   text-align: center;
+}
+.homeCarouse_ul_li{
+	 text-align: center;
+	 line-height: 2rem;
+}
+
+.HomeCarouselDetails_ul_ertd li {
+	width: 100%;	
+	float: left;
+}
+
+.HomeCarouselDetails_ul_images {
+	height: 10rem;	
+	width: 100%;
+}
+.homeCarouse_ul_li img{
+	height: 1.2rem;
+	margin-right: 0.5rem;
+}
+.HomeCarouselDetails_ul_ertd li:not(:first-child) {
+	box-sizing: border-box;
+	padding: 0 0.8rem;
+}
+
+
+/*轮播详情页结束*/
+
+
+/*通知公告样式*/
+
+
+/*.preloader-indicator-overlay{
+	background-color: #fff;
+}*/
+
+.preloader-indicator-modal {
+	/*加载图标样式*/
+	/*background-color: #fff;*/
+	/*opacity: 0.8;*/
+	background: rgba(0, 0, 0, 0.65);
+}
+
+.index-information {
+	margin-top: -0.3rem;
+	height: 2rem;
+	background-color: #121212;
+	line-height: 2rem;
+	padding: 0rem 1.5rem;
+}
+
+.laba {
+	font-size: 0.8rem;
+	position: relative;
+	top: 0.05rem;
+	color: #fdd07f;
+	font-weight: 600;
+}
+
+.information-detail span {
+	margin-left: 0.25rem;
+	color: #fdd07f;
+	font-weight: 300;
+}
+
+
+/*首页内容样式*/
+
+.index-content-firstval {
+	margin: 1rem 0.75rem!important;
+}
+
+.index-content {
+	box-shadow: 0.05rem 0.05rem 0.2rem #808080;
+	margin: 1.5rem 0.75rem;
+	background-color: white;
+	border-radius: 0.625rem;
+}
+
+.index-content-title {
+	height: 2.4rem;
+	border-bottom: 0.0625rem solid #e5e5e5;
+}
+
+.same-style {
+	padding: 0rem 0.56rem;
+}
+
+.index-content-word {
+	line-height: 2.5rem;
+}
+
+.index-content-word span {
+	border-left: 0.3125rem solid #0a0a0a;
+	padding-left: 0.5rem;
+	color: #0a0a0a;
+	font-weight: 600;
+}
+
+.index-news-more-right {
+	float: right;
+	border-left: none!important;
+}
+
+.index-content-fist-list {
+	padding: 0.7rem 0.5rem 0.3rem 0.5rem;
+	height: 3.75rem;
+	border-bottom: 0.0625rem solid #e5e5e5;
+}
+
+.index-content-fist-list-height {
+	height: auto;
+}
+
+.sum-mark {
+	font-weight: 500;
+	color: #b19d4d;
+}
+
+.sum-mark-show {
+	float: right;
+	color: #04C29C;
+}
+
+.index-content-fist-list-img {
+	margin-right: 0.5rem;
+	width: 3.4rem;
+	height: 3.4rem;
+	border-radius: 2.375rem;
+	float: left;
+}
+
+.index-content-fist-list-img img {
+	margin-right: 0.5rem;
+	width: 3.4rem;
+	height: 3.4rem;
+	border-radius: 2.375rem;
+	float: left;
+}
+
+.index-content-fist-list-word {
+	margin-left: 0.5rem;
+	padding-top: 0.25rem;
+}
+
+.index-content-fist-list-name {
+	font-family: "微软雅黑";
+	color: black;
+}
+
+.index-content-fist-list-vertify {
+	margin-left: 3.39rem;
+	width: 5.2rem;
+	margin-top: 0.25rem;
+	padding: 0.1rem 0.25rem;
+	background-color: #04c29c;
+	border-radius: 0.3125rem;
+}
+
+.index-content-fist-list-vertify img {
+	width: 1.2rem;
+	height: 1.2rem;
+	float: left;
+}
+
+.index-content-fist-list-vertify span {
+	margin-left: 0.25rem;
+	line-height: 1.3rem;
+	color: white;
+}
+
+.noVerify {
+	background-color: #ed5c47;
+}
+
+.noVerify span {
+	color: white;
+}
+
+.index-content-fist-list-time {
+	float: right;
+	color: gray;
+	font-family: "微软雅黑";
+	padding-top: 0.25rem;
+}
+
+
+/*底部导航栏样式*/
+
+.imgicon {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+.activetoolbar {
+	color: #d2b772!important;
+}
+
+
+/*头部资产样式*/
+
+.index-col {
+	padding: 0.625rem 0.625rem;
+}
+
+.found-height {
+	text-align: center;
+	margin-bottom: 0.625rem;
+}
+
+.found-second-size {
+	color: #00c182;
+}
+
+.negative {
+	color: red;
+}
+
+.found-third-size {
+	color: red;
+}
+
+
+/*行业资讯样式*/
+
+.index-news-left-top a {
+	color: black;
+}
+
+.index-news-all-line {
+	overflow: hidden;
+	width: 100%;
+}
+
+.index-content-news-fist-list {
+	width: 100%;
+	float: left;
+	box-sizing: border-box;
+}
+
+.index-news-left {
+	width: 60%;
+	float: left;
+}
+
+.index-news-left-top p {
+	height: 2.1875rem;
+}
+
+.index-news-right {
+	width: 40%;
+	margin-left: 0rem;
+	float: right;
+	padding: 0.35rem 0;
+	box-sizing: border-box;
+}
+
+.index-news-right img {
+	width: 6.25rem;
+	height: 4.375rem;
+	display: block;
+	float: right;
+	border-radius: 0.3125rem;
+}
+
+.index-news-left-bottom {
+	color: gray;
+}
+
+.index-news-left-bottom span {
+	margin-left: 0.625rem;
+}
+
+
+/*行业资讯样式*/
+
+.news-content-img p img {
+	width: 100%!important;
+	height: 100%!important;
+}
+
+.public_btn {
+	border: none;
+	color: #fff;
+	display: block;
+	width: 100%;
+	text-align: center;
+	clear: both;
+	line-height: 2.2rem;
+	border-radius: 50px;
+	background: -webkit-linear-gradient(left, #7b43ec 0%, #c678fd 100%);
+	/* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(right, #7b43ec 0%, #c678fd 100%);
+	/* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(right, #7b43ec 0%, #c678fd 100%);
+	/* Firefox 3.6 - 15 */
+	background: linear-gradient(to right, #b9a159 0%, #ceb86d 100%);
+	/* 标准的语法 */
+}
+
+.login-btn-4s {
+	margin: 0 auto;
+	width: 83%;
+}
+
+.binding-btn {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+/*订单跑马灯样式*/
+
+.marqueeAll {
+	padding: 0.8rem 1.4rem 0rem 1.2rem;
+	/*box-shadow: 0.05rem 0.05rem 0.2rem #808080;*/
+}
+
+.marqueeLeft {
+	line-height: 30px;
+	width: 100%;
+}
+
+.marqueeLeft span {
+	font-size: 0.7rem;
+	color: #0a0a0a;
+	font-weight: 600;
+	line-height: 30px;
+	border-left: 0.3125rem solid #0a0a0a;
+	padding-left: 0.5rem;
+}
+.newbusiness{
+	padding-top: 0.8rem;
+	padding-left: 1.2rem;
+}
+#Marquee {
+	height: 90px;
+	overflow: hidden;
+}
+
+#Marquee div {
+	height: 30px;
+}
+
+.marqueeClass {
+	justify-content: initial;
+	line-height: 30px;
+	height: 30px;
+	/*color: #00BCD4;*/
+	color: #D2B772;
+}
+
+.fist-width {
+	text-align: left;
+	color: #000000;
+	width: 3.5rem;
+	overflow: hidden;
+	margin-right: 0.25rem;
+}
+
+.second-width {
+	width: 9.5rem;
+	text-align: left;
+	color: #04c29c;
+	overflow: hidden;
+	/*float: right;*/
+}
+
+.second-width-Exp {
+	width: 9.5rem;
+	text-align: left;
+	color: #F5593F;
+	overflow: hidden;
+}
+
+.third-width {
+	width: 4rem;
+	text-align: right;
+	color: #848282;
+}

@@ -1,0 +1,255 @@
+<div class="navbar">
+	<div class="navbar-inner">
+
+		<div class="left back-left" id="myAdBack">
+			<a href="javascript:void(0);" class="back link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+		<div class="center sliding">我的广告</div>
+		<div class="right" id="OrderRight">
+			<a href="javascript:void(0);" onclick="sysIndex.linkospublishAd(0,0);" class="link link-add">
+				<i class="iconfont icon-jia"></i>
+			</a>
+		</div>
+
+		<!--<div class="buttons-row myAdTabHeight" id="AdTopNavTogger">-->
+		<!-- 关联到第一个tab, 默认激活 -->
+		<!--<a href="#myAding" id="AdIsLoding" class="tab-link active button myAdButton"><span id="myAdload">进行中</span></a>-->
+		<!-- 关联到第二个tab -->
+		<!--<a href="#myAded" id="AdIsOut" class="tab-link button myAdButton"><span id="myAdloaded">已下架</span></a>-->
+		<!--</div>-->
+	</div>
+
+</div>
+
+<div class="pages">
+	<div data-page="myAd" class="page no-tabbar">
+		<div class="page-content content-bg fcfc-public">
+			<!--pull-to-refresh-content infinite-scroll id="myAdListPage"-->
+			<!--<div class="pull-to-refresh-layer pull-to-refresh-height">
+				<div class="preloader"></div>
+				<!--<div class="pull-to-refresh-arrow"></div>
+			</div>-->
+
+			<div class="myAd_tab_Switch">
+				<a href="javascript:;" onclick="Ad.tabs();" id="myAd_content_Switch_processing">进行中</a>
+				<a href="javascript:;" onclick="Ad.tabs2();" id="myAd_content_Switch_Obtained">已下架</a>
+			</div>
+			<ul class="myAd_content_Switch" id="myAd_content_Switch_ul">
+				<li id="myAd_content_Switch_first" >
+					<!--<div class="myAdList">
+						<div class="myAdListContentDetail">
+							<div class="buyAdTitle">
+								<span class="myAdTitle">购买广告52139</span>
+								<span class="myAdState">进行中</span>
+							</div>
+							<div class="buyAdSecondContent">
+								<div class="myAdTitlePrice">报价</div>
+								<div class="myAdlater">
+									<span class="myAdPrice">
+											4385.94
+											<span>CNY</span>
+									</span>
+									<span class="myAdPayType">
+											<img src="img/deal/Weixin.png" />
+										</span>
+									<span class="myAdPayType">
+											<img src="img/deal/NetSilver.png" />
+										</span>
+									<span class="myAdPayType">
+											<img src="img/deal/Alipay.png" />
+										</span>
+								</div>
+							</div>
+							<div class="buyAdSecondContent">
+								<div class="myAdTitlePrice">交易限额</div>
+								<div class="myAdlater">
+									<span class="myAdPrice">
+											100000-1000000
+											<span>CNY</span>
+									</span>
+								</div>
+							</div>
+							<div class="buyAdSecondContent lastContent">
+								<div class="myAdTitlePrice">创建时间</div>
+								<div class="myAdlater">
+									<span class="myAdPrice">2018-9-10 09:54:32</span>
+								</div>
+							</div>
+							<div class="buyLastContent">
+								<span><a type="button" class="ad-Lower-frame">下架</a></span>
+								<span><a type="button" class="adEdit" onclick="sysIndex.LinkpublishAd()">编辑</a></span>
+							</div>
+						</div>
+					</div>-->
+
+				</li>
+				<li id="myAd_content_Switch_last">
+					<!--<div class="myAdList">
+						<div class="myAdListContentDetail">
+							<div class="buyAdTitle">
+								<span class="myAdTitle">购买广告52139</span>
+								<span class="myAdState">已下架</span>
+							</div>
+							<div class="buyAdSecondContent">
+								<div class="myAdTitlePrice">报价</div>
+								<div class="myAdlater">
+									<span class="myAdPrice">
+											4385.94
+											<span>CNY</span>
+									</span>
+									<span class="myAdPayType">
+											<img src="img/deal/Weixin.png" />
+										</span>
+									<span class="myAdPayType">
+											<img src="img/deal/NetSilver.png" />
+										</span>
+									<span class="myAdPayType">
+											<img src="img/deal/Alipay.png" />
+										</span>
+								</div>
+							</div>
+							<div class="buyAdSecondContent">
+								<div class="myAdTitlePrice">交易限额</div>
+								<div class="myAdlater">
+									<span class="myAdPrice">
+											100000-1000000
+											<span>CNY</span>
+									</span>
+								</div>
+							</div>
+							<div class="buyAdSecondContent lastContent">
+								<div class="myAdTitlePrice">创建时间</div>
+								<div class="myAdlater">
+									<span class="myAdPrice">2018-9-10 09:54:32</span>
+								</div>
+							</div>
+							<div class="buyLastContent">
+								<span><a type="button" class="adEditSell">编辑</a></span>
+								<span><a type="button" class="ad-Lower-frameSell">上架</a></span>
+							</div>
+						</div>
+					</div>-->
+				</li>
+			</ul>
+
+			<!--<div class="content-block content-public-height"></div>-->
+
+			<!--<div class="tabs" style="margin-top: 2rem;">
+				
+				<div id="myAding" class="tab active">
+					<div class="content-block  content-public-height" id="divPulldown" data-distance="100">
+
+						<div class="myAdlistContent" id="adListing">-->
+			<!--<div class="myAdList">
+								<div class="myAdListContentDetail">
+									<div class="buyAdTitle">
+										<span class="myAdTitle">购买广告52139</span>
+										<span class="myAdState">进行中</span>
+									</div>
+									<div class="buyAdSecondContent">
+										<div class="myAdTitlePrice">报价</div>
+										<div class="myAdlater">
+										<span class="myAdPrice">
+											4385.94
+											<span>CNY</span>
+										</span>
+										<span class="myAdPayType">
+											<img src="img/deal/Weixin.png" />
+										</span>
+										<span class="myAdPayType">
+											<img src="img/deal/NetSilver.png" />
+										</span>
+										<span class="myAdPayType">
+											<img src="img/deal/Alipay.png" />
+										</span>
+										</div>
+									</div>
+									<div class="buyAdSecondContent">
+										<div class="myAdTitlePrice">交易限额</div>
+										<div class="myAdlater">
+										<span class="myAdPrice">
+											100000-1000000
+											<span>CNY</span>
+										</span>
+										</div>
+									</div>
+									<div class="buyAdSecondContent lastContent">
+										<div class="myAdTitlePrice">创建时间</div>
+										<div class="myAdlater">
+										<span class="myAdPrice">2018-9-10 09:54:32</span>
+										</div>
+									</div>
+									<div class="buyLastContent">
+										<span><a type="button" class="ad-Lower-frame">下架</a></span>
+										<span><a type="button" class="adEdit" onclick="sysIndex.LinkpublishAd()">编辑</a></span>
+									</div>
+								</div>
+							</div>-->
+
+			<!--</div>
+					</div>
+				</div>-->
+			<!-- Tab 2 -->
+			<!--<div id="myAded" class="tab">
+					<div class="content-block content-public-height">
+
+						<div class="myAdlistContent" id="AdListed">-->
+
+			<!--<div class="myAdList">
+								<div class="myAdListContentDetail">
+									<div class="buyAdTitle">
+										<span class="myAdTitle">购买广告52139</span>
+										<span class="myAdState">已下架</span>
+									</div>
+									<div class="buyAdSecondContent">
+										<div class="myAdTitlePrice">报价</div>
+										<div class="myAdlater">
+										<span class="myAdPrice">
+											4385.94
+											<span>CNY</span>
+										</span>
+										<span class="myAdPayType">
+											<img src="img/deal/Weixin.png" />
+										</span>
+										<span class="myAdPayType">
+											<img src="img/deal/NetSilver.png" />
+										</span>
+										<span class="myAdPayType">
+											<img src="img/deal/Alipay.png" />
+										</span>
+										</div>
+									</div>
+									<div class="buyAdSecondContent">
+										<div class="myAdTitlePrice">交易限额</div>
+										<div class="myAdlater">
+										<span class="myAdPrice">
+											100000-1000000
+											<span>CNY</span>
+										</span>
+										</div>
+									</div>
+									<div class="buyAdSecondContent lastContent">
+										<div class="myAdTitlePrice">创建时间</div>
+										<div class="myAdlater">
+										<span class="myAdPrice">2018-9-10 09:54:32</span>
+										</div>
+									</div>
+									<div class="buyLastContent">
+										<span><a type="button" class="adEditSell">编辑</a></span>
+										<span><a type="button" class="ad-Lower-frameSell">上架</a></span>
+									</div>
+								</div>
+							</div>-->
+			<!--</div>
+					</div>
+				</div>-->
+			<!--</div>-->
+			<!-- 加载提示符 -->
+			<!--<div class="infinite-scroll-preloader" id="MyAdlodingScroll">
+				<div class="preloader" ></div>
+			</div>-->
+		</div>
+	</div>
+</div>

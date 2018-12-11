@@ -1,0 +1,118 @@
+<!-- 顶部导航-->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left back-left" id="purchaseDetailsBack-2s">
+			<a href="javascript:void(0);" class="link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+		<div class="center sliding">购买CUBC</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="PurchaseDetails2" class="page no-tabbar payment_style_4s">
+		<div class="page-content hide-bars-on-scroll content-bg payment_style_5s">
+
+			<!--<div class="content-block">
+				<p>
+					<p><div class="create-popup">Create Popup</div></p>
+				</p>
+			</div>-->
+
+			<div class="SaleDetails2_top">
+				<ul class="SaleDetails2_ul">
+					<li>
+						<div><img src="img/my/progress-bar.png" /><span></span></div>
+						<div><img src="img/my/progress-bar2.png" /><span></span></div>
+						<div><img src="img/my/progress-bar2.png" /><span></span></div>
+						<div><img src="img/my/progress-bar2.png" /></div>
+					</li>
+				</ul>
+				<ul class="SaleDetails2_ul_2s">
+					<li>
+						<div>下订单</div>
+						<div>线下付款</div>
+						<div>已付款</div>
+						<div>待放币</div>
+					</li>
+				</ul>
+			</div>
+			<div class="SaleDetails2_Tobepaid">
+				<span>订单号</span>
+				<span id="Purchase_details_order_number_k">1801223148544</span>
+				<span id="t_Purchase_pending_payment">待支付</span>
+			</div>
+			<div class="SaleDetails2_content">
+				<div class="SaleDetails2_Tobepaid_2s">
+					<input type="hidden" id="Alipay_erweima_ert" value="" /> <!--支付宝二维码-->
+					<input type="hidden" id="WeChat_erweima_ert" value="" /> <!--微信二维码-->
+					
+					
+					
+					<input type="hidden" id="Buy_set_order_id_y" value="" />
+					<input type="hidden" id="Buy_set_Alipay_e" value="" />
+					<input type="hidden" id="Purchase_set_bank_card_e" value="" />
+					<input type="hidden" id="Buy_Settings_WeChat_e" value="" />
+
+					<input type="hidden" id="Buy_Alipay_account_j" value="" />
+					<input type="hidden" id="Purchase_bank_card_account_j" value="" />
+					<input type="hidden" id="Buy_WeChat_account_j" value="" />
+					<input type="hidden" id="Bind_real_name_j" value="" />
+					<ul class="SaleDetails2_Tobepaid_2s_ul_1s">
+						<li id="SaleDetails2_myuser_nex">买家</li>
+						<li>实名信息</li>
+						<li>订单金额(CNY)</li>
+						<li>资产CUBC</li>
+						<li>单价(CNY)</li>
+						<li>下单时间</li>
+					</ul>
+					<ul class="SaleDetails2_Tobepaid_2s_ul_2s">
+						<li id="Purchase_details_buyer_m">CUBC欧阳信</li>
+						<li id="Real_name_information">王二小</li>
+						<li id="Purchase_details_amount_h">2000.00</li>
+						<li id="Purchase_details_quantity_e">80000.00000000</li>
+						<li id="Purchase_unit_price_4s">0.25</li>
+						<li id="Purchase_details_order_time_u">2018-09-10 10:24:49</li>
+					</ul>
+				</div>
+			</div>
+			<div class="SaleDetails2_Tobepaid create-popup" onclick="Orderset.PurchasePaymentMethod();" style="border-top: 1px solid #f6f6f6;">
+				<span>付款方式</span>
+				<ol class="paymentFan_3s_s" id="purchaseDetailsolpuls_i">请选择<img src="img/my/jiantou.png" /></ol>
+			</div>
+			<div id="PurchaseDetails2_footer_j_s" class="PurchaseDetails2_footer none">
+				<div class="PurchaseDetails2_Alipay_1s">
+					<img src="img/index/Alipay-s.png" />
+					<p>支付宝转账</p>
+				</div>
+				<ul class="PurchaseDetails2_Alipay_2s">
+					<li>支付宝账号<img src="img/my/progress-bar4.png" /> </li>
+					<li>任超<img src="img/my/progress-bar4.png" /></li>
+					<li>13619654020<img src="img/my/progress-bar4.png" /></li>
+				</ul>
+			</div>
+			<div class="SaleDetails2_Tobepaid">
+				<span>付款凭证</span>
+			</div>
+			<div class="SaleDetails2_Tobepaid">
+				<div class="arbitration_list_son_content arbitration_list_son_mar justify-content" onclick="Orderset.arbitrationmyimg();">
+					<input type="hidden" id="arbitration_list_images_amd" value="" />
+					<img id="ArbitrationlistImg" src="img/my/Gaga.png" />
+				</div>
+			</div>
+			<div class="SaleDetails2_Tobepaid">
+				<span>交易提醒</span>
+			</div>
+			<ul class="SaleDetails3_flooter_ul PurchaseDetails2_footer_border">
+				<li><img src="img/my/progress-bar3.png" />请在规定时间内完成转账</li>
+				<li><img src="img/my/progress-bar3.png" />请在规定时间内完成转账请在规定时间内完成转账请在规定时间内完成转账请在规定时间内完成转账</li>
+				<li><img src="img/my/progress-bar3.png" />若您已完成线下付款，请务必点击“已付款，请放币”，否则有可能造成您的资金损失；若还未付款，请在规定时间内完成付款！</li>
+			</ul>
+			<div class="SaleDetails3_flooter_fixed"></div>
+			<ul class="PurchaseDetails2_footer_2s">
+				<li><span><span class="PurchaseDetails2_minutes"></span>'<span class="PurchaseDetails2_seconds"></span>'</span>后取消交易</li>
+				<li onclick="Orderset.PleasePutMoney();">已付款，请放币</li>
+			</ul>
+		</div>
+	</div>
+</div>

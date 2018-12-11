@@ -1,0 +1,42 @@
+.payment_style_5s {
+	padding-top: 2.5rem!important;
+}
+
+.payment_ul_4s {
+	width: 100%;
+}
+
+.payment_ul_4s li {
+	width: 100%;
+	border-bottom: 1px solid #eee;
+	line-height: 2.5rem;
+	float: left;
+	box-sizing: border-box;
+	padding-right: 15px;
+}
+
+.payment_ul_4s li span:nth-child(1) img {
+	width: 1rem;
+	position: relative;
+	margin: 0 0.7rem;
+	top: 0.23rem;
+	max-width: 100%;
+}
+
+.payment_ul_4s li span:nth-child(2) img {
+	width: 0.7rem;
+	position: relative;
+	/* margin: 0 0.7rem; */
+	top: 0.09rem;
+	left: 0.1rem;
+	max-width: 100%;
+}
+
+.payment_ul_4s span:nth-child(1) {
+	float: left;
+}
+
+.payment_ul_4s span:nth-child(2) {
+	float: right;
+	color: #BDBDBD;
+}

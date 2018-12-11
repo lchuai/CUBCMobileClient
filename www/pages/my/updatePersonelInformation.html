@@ -1,0 +1,44 @@
+<!-- 顶部导航-->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left back-left"  id="updatePersonelInfoBack">
+			<a href="javascript:void(0);" class="link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+		<div class="center sliding">修改个人信息</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="updatePersonelInfo" class="page no-tabbar">
+		<div class="page-content hide-bars-on-scroll content-bg">
+			<div class="content-block">
+				<div class="personel-all">
+					<div class="list-block">
+						<ul>
+							<li class="personel-list">
+								<a href="javascript:void(0);" onclick="sysMy.UpdateUserGravatar();" class="item-link item-content">
+									<div class="item-inner">
+										<div class="item-title">修改头像</div>
+										<div class="item-after personel-list-item-after">
+											<input id="hidGravatarImg" type="hidden" />
+											<img id="imgGravatarImg" src="img/my/nickName.png" />
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="personel-list">
+								<a href="javascript:void(0);" onclick="sysIndex.linkUpdateNickName();" class="item-link item-content">
+									<div class="item-inner">
+										<div class="item-title">修改昵称</div>
+										<div id="divPersonelUserNick" class="item-after personel-list-item-after">{{nickName}}</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

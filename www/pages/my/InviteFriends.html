@@ -1,0 +1,110 @@
+<!-- 顶部导航-->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left back-left" id="btnInviteFriendBack">
+			<a href="javascript:void(0);" class="link">
+				<i class="icon icon-back"></i>
+			</a>	
+		</div>
+		<div class="center sliding">邀请好友</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="InviteFriends" class="page no-tabbar">
+		<div class="page-content content-bg">
+			<div class="content-block">
+				<div class="index-content invite-content">
+					<div class="index-content-title same-style">
+						<!-- tabs控制面板 -->
+						<div class="buttons-row invite-row">
+							<!-- 关联到第一个tab, 默认激活 -->
+							<a href="#Invite1" id="Invite01" class="tab-link active button invite-btn">区块一</a>
+							<!-- 关联到第二个tab -->
+							<a href="#Invite2" id="Invite02" class="tab-link button invite-btn">区块二</a>
+							
+						</div>
+						<div class="index-content-fist-list index-content-fist-list-height same-style">
+									<span class="sum-mark">我的业绩</span>
+									<span class="sum-mark-show" id="Performance"></span>
+						</div>
+						<div class="QR-code">
+							<img id="BlockQRCode" src="" />
+						</div>
+						<div class="invite-two-btn">
+							<div id="nvite1" class="invite-first-btn">
+								<button type="button" onclick="sysMy.InviteCopy(this,1)">文字邀请</button>
+							</div>
+							<div id="nvite2" class="invite-first-btn">
+								<button type="button" onclick="sysMy.InviteCopy(this,2)">文字邀请</button>
+							</div>
+							<div id="copy1" class="invite-second-btn">
+								<button id="ccopy1" type="button">复制邀请码</button>
+							</div>
+							<div id="copy2" class="invite-second-btn">
+								<button id="ccopy2" type="button">复制邀请码</button>
+							</div>
+							<div id="hid" class="invite-second-btn">
+								<button type="button">链接邀请</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Tabs, 标签内容区容器 -->
+			<div class="tabs">
+				<!-- Tab 1, 默认激活 -->
+				<div id="Invite1" class="tab active">
+					<div class="content-block">
+						<div class="index-content">
+							<div class="index-content-title same-style invite-content-title">
+								<h3>我的团队</h3>
+							</div>
+							<div id="UserInvite01">
+								<!--<div class="index-content-fist-list same-style">
+								<div class="index-content-fist-list-img"></div>
+								<div class="index-content-fist-list-word">
+									<div class="index-content-fist-list-name">
+										欧阳信
+										<span class="index-content-fist-list-time">1分钟前</span>
+									</div>
+									<div class="index-content-fist-list-vertify">
+										<img src="img/index/nameLogo.png" />
+										<span>已实名认证</span>
+									</div>
+								</div>
+							</div>-->
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- Tab 2 -->
+				<div id="Invite2" class="tab">
+					<div class="content-block">
+						<div class="index-content">
+							<div class="index-content-title same-style invite-content-title">
+								<h3>我的团队</h3>
+							</div>
+							<div id="UserInvite02">
+								<!--<div class="index-content-fist-list same-style">
+								<div class="index-content-fist-list-img"></div>
+								<div class="index-content-fist-list-word">
+									<div class="index-content-fist-list-name">
+										欧阳信
+										<span class="index-content-fist-list-time">2分钟前</span>
+									</div>
+									<div class="index-content-fist-list-vertify">
+										<img src="img/index/nameLogo.png" />
+										<span>已实名认证</span>
+									</div>
+								</div>
+							</div>-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="../../js/common/myindex.js"></script>

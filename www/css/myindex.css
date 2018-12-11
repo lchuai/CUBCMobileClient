@@ -1,0 +1,64 @@
+.personel-all{
+     padding: 0.625rem 0rem 0.25rem;
+     margin-top: 0.625rem;
+     margin-bottom: 1.875rem;
+}
+ .personel-list{
+     margin: 0.625rem 0.625rem;
+     height: 2.55rem;
+     line-height: 2.55rem;
+     border-radius: 0.3125rem;
+     border: 1px solid #e5e5e5;
+}
+ /*.item-font{
+     font-size: 0.8rem !important;
+}*/
+ .personel-update-list{
+     height: 5.25rem;
+}
+ .item-personel-media{
+     height: 5.25rem;
+}
+ .item-personel-media img{
+     width: 2.9rem;
+     height: 2.9rem;
+     border-radius: 1.5625rem;
+}
+ .personel-list-item-after img{
+     width: 2.125rem;
+     height: 2.125rem;
+     border-radius: 1.5625rem;
+}
+ .item-personel-inner{
+     background-size: 0rem!important;
+}
+ .list-block .item-after{
+     max-height: 3.75rem;
+}
+ .same-icon-style img{
+     width: 1.25rem;
+}
+/*我的高亮显示*/
+ .personel-list-item-after{
+     color: #00C39C!important;
+}
+/*清出高亮样式*/
+ .personel-list-item-clear{
+     color: #C7C7CC!important;
+}
+/*清除樣式*/
+ .list-block .item-inner:after{
+     background-color: initial;
+}
+ .list-block{
+     margin: 0rem;
+}
+ .list-block ul:before{
+     background-color: initial;
+}
+ .list-block ul:after{
+     background-color: initial;
+}
+ .item-inner {
+ 	padding-top: 0!important;padding-bottom: 0!important;
+ }

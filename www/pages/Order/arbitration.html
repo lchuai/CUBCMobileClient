@@ -1,0 +1,68 @@
+<!-- 顶部导航-->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left back-left" id="arbitrationdx-3s">
+			<a href="javascript:void(0);" class="link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+		<div class="center sliding">仲裁中订单</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="arbitration" class="page no-tabbar payment_style_4s">
+		<div class="page-content hide-bars-on-scroll content-bg payment_style_5s">
+			<div class="SaleDetails2_Tobepaid">
+				<span>订单号</span>
+				<span id="arbitration_order_cc_g">1801223148544</span>
+				<span style="color: #F66D58;">仲裁中</span>
+			</div>
+			<div class="SaleDetails2_content" style="width: 100%;float: left;">
+				<div class="SaleDetails2_Tobepaid_2s">
+					<ul class="SaleDetails2_Tobepaid_2s_ul_1s">
+						<li>买家</li>
+						<li>卖家</li>
+						<li>订单金额(CNY)</li>
+						<li>下单时间</li>
+					</ul>
+					<ul class="SaleDetails2_Tobepaid_2s_ul_2s">
+						<li id="arbitration_user_y">CUBC欧阳信11111</li>
+						<li id="arbitration_name_y">王二小</li>
+						<li id="arbitration_Quantity_y">2000.00</li>
+						<li id="arbitration_time_y">2018-09-10 10:24:49</li>
+					</ul>
+				</div>
+			</div>
+			<div class="arbitration_list">
+				<input type="hidden" id="arbitration_list_hidden_sw" value="" />
+				<input type="hidden" id="arbitration_list_render_ts" value="" />
+				<div class="arbitration_drop_down">
+					<label>仲裁理由</label>
+					<div class="arbitration_ul_relative">
+						<input type="text" onclick="Orderset.arbitrationClicks();"  readonly="readonly" id="arbitration_ul_relative_input_esp" placeholder="请选择仲裁理由" value="" />
+						<ul class="arbitration_ul_jk" id="arbitration_ul_jk_UL">						
+							<li id="arbitration_ul_jk_render">	
+								<!--<div>asdasdasd</div>
+								<div>啊是大</div>
+								<div>感受到</div>
+								<div>大范甘迪</div>
+								<div>巅峰时代</div>
+								<div>豆腐干地方</div>
+								<div>微软史蒂夫</div>
+								<div>是豆腐干豆腐干</div>-->
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="arbitration_list_son">
+					<div class="arbitration_list_son_content justify-content" onclick="Orderset.sendQRcode();">
+						<input type="hidden" id="arbitration_list_images_t" value="" />						
+						<img id="ArbitrationImg" src="img/my/Gaga.png"/>
+					</div>
+					<textarea id="arbitration_list_sv_textarea" class="arbitration_list_son_textarea" name="modifys" placeholder="请填写备注信息"></textarea>
+					<div class="public_btn" onclick="Orderset.SubmitArbitration();">提交仲裁</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

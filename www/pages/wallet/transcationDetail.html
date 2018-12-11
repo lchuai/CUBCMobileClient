@@ -1,0 +1,71 @@
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left back-left" id="transactionDetailBack">
+			<a href="javascript:void(0);" class="link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+		<div class="center sliding">钱包充值</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="transcationDetail" class="page no-tabbar">
+		<div class="page-content content-bg">
+			<form role="form" class="verify-form">
+				<div class="form-group" class="texts-justify">
+					<div class="login-forget-password">
+						<a href="#" class="item-link item-content external">交易钱包由释放钱包、糖果派送、线性奖励转入。会员自愿转。转到交易钱包里的CUBC币才可以挂卖。交易钱包的币不可以逆转。不能转到智能钱包、释放钱包、链接钱包。</a>
+					</div>
+				</div>
+				<div class="form-group" class="texts-justify">
+					<div class="verify-instruction">
+						<p>在交易市场上和会员互转的币都是从交易钱包里划转。包括手续费。如果手续费不够。挂单的时候，可以转账或者出售的币，数量最多只能是总量减去手续费后的数量。</p>
+					</div>
+				</div>
+				<div class="list-block">
+					<ul>
+						<li>
+							<!-- data-virtual-list-height="55" attribute to set virtual list single item height to 55px -->
+							<a href="#" class="item-link smart-select" data-virtual-list="true" data-virtual-list-height="85">
+								<select id="WalletCategory" name="充值钱包">
+									<option value="1">释放钱包</option>
+									<option value="2">糖果派送</option>
+									<option value="3">线性奖励</option>
+								</select>
+								<div class="item-content wallet-content">
+									<div class="item-inner wallet-inner">
+										<div class="item-title">充值钱包</div>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="form-group">
+					<div class="verify-name phone-number-2rem">
+						<input id="txtTransctionDetailAssets" type="text" name="modifys" class="form-verify-name-control" placeholder="充值数量">
+						<button type="button" id="TotalAssets" class="transcation-all-btn">全部</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="login-forget-password">
+						<div class="list-block triangle">
+							<ul>
+								<li>
+									<span class="warnning">注意：</span>
+									<span class="warnning-word">
+										  充值数量不能大于对应钱包里的数量
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--<div id="Verify_submit">确认提交</div>-->
+				<div class="form-group login-form-btn">
+					<a href="javascript:void(0);" style="width: auto;" class="public_btn login-btn-4s Reset-btns-my" id="TranscationDetail_submit">确认提交</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

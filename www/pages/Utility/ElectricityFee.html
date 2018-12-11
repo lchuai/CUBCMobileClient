@@ -1,0 +1,61 @@
+<!-- 顶部导航-->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left back-left close-picker" id="LivingPayment-ElectricityFee">
+			<a href="javascript:void(0);" class="link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+		<div class="center sliding">电费缴费</div>
+		<div class="right close-picker" id="ElectricityFee_query">
+			<div onclick="LivingPayment.ElectricityPaymentContensQuery();">
+				<a href="javascript:void(0);" class="link link-filter">
+					<i class="f7-icons">menu</i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="ElectricityFee" class="page no-tabbar payment_style_4s">
+		<div class="page-content hide-bars-on-scroll content-bg payment_style_5s flex_c">
+			<div class="SaleDetails2_Tobepaid" style="border-bottom: 0.3125rem solid #f6f6f6;">
+				<span class="ElectricityFee_spv_u">缴费单位</span>
+				<span id="ElectricityFee_PaymentUnit"></span>
+			</div>
+			<input type="hidden" id="ElectricityFee_hiddens_inputs_ids" />
+			<input type="hidden" id="ElectricityFee_hiddens_inputs_huhao" />
+			<div class="ElectricityFee_content">
+				<div class="SaleDetails2_Tobepaid_2s">
+					<ul class="SaleDetails2_Tobepaid_2s_ul_1s ElectricityFee_ul_1s">
+						<li>缴费户号</li>
+						<li>户名</li>
+						<li>住址信息</li>
+						<li>充值金额</li>
+						<li style="height: 4rem;">
+							<div>可用CUBC</div>
+							<div>所需CUBC</div>
+						</li>
+					</ul>
+					<ul class="SaleDetails2_Tobepaid_2s_ul_2s ElectricityFee_ul_2s">
+						<li id="ElectricityFee_Account_numbers"></li>
+						<li id="ElectricityFee_Account_name"></li>
+						<li id="ElectricityFee_Account_address" style="color: #333;"></li>
+						<li><input id="ElectricityFee_Account_inputs_java" type="number" class="ElectricityFee_ul_inpt" name="SaleDetails4s" id="" placeholder="请输入充值金额" /></li>
+						<li style="height: 4rem;">
+							<div class="btl_color_l" id="ElectricityFee_Account_TransAssets_java"></div>
+							<div class="btl_color_red" id="ElectricityFee_Account_TransAssets_avas"><span class="btl_color_999">（录入充值金额自动计算）</span></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="SaleDetails2_Tobepaid">
+				<span>充值说明：</span>
+				<span class="ElectricityFee_sp_t btl_color_999">充值时间，9:00-17:00提交，当天内能充值到账，17:00以后提交充值，充值会有延迟</span>
+			</div>
+			<div class="modify_content">
+				<a class="modify_btn" onclick="LivingPayment.ElectricityUserDetermined();" href="javascript:;">确认</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,44 @@
+<!-- 顶部导航-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left back-left" id="WeChatReturn">
+            <a href="javascript:void(0);" class="link">
+                <i class="icon icon-back"></i>
+            </a>
+        </div>
+        <div class="center sliding">微信支付设置</div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="WeChatPayment" class="page no-tabbar payment_style_4s">
+        <div class="page-content hide-bars-on-scroll content-bg payment_style_5s flex_c">
+           <ul class="modify_ul_4s">
+           		<li><span>微信昵称</span><input id="hidWeChatId" type="hidden" value="" /><input id="NickName" name="modifys" type="text" placeholder="请输入微信昵称"/></li>
+           		<li><span>微信账号</span><input id="UserName" name="modifys" type="text" placeholder="请输入微信账号"/></li>
+           		<li>
+           			<span>短信验证码</span>
+           			<input name="modifys" id="WeChatSmsCode" type="number" placeholder="请输入短信验证"/>
+           			<b></b>
+           			<input type="text" id="weChatCode" class="modifyzym" onclick="Alipay.sendWeChatCode();" value="发送验证码" readonly="readonly"/>
+           		</li>
+           	</ul>
+           	<div class="modify_content modify_content_Alipay">
+           		<p>微信收款码</p>
+           		<div class="Alipay_code justify-content" onclick="Alipay.sendweChatQRcode();">
+           			<div>
+           				<input id="hidWeChatImg" type="hidden" />
+           				<img id="WeChatSRCode" class="Alipay_code_img" src="img/my/Alipay-img.png"/>  
+           				<p class="modify_copy">上传二维码</p>
+           			</div>
+           		</div>
+           		<a class="modify_btn" id="weChatBtn" href="javascript:void(0);" onclick="Alipay.SubWeChatData()">确认</a>
+           		<p class="modify_p">提示：法币交易属于场外交易，法币不经过平台，平台不会自动扣款，需要您手动自行转账给对方，对方才能收到款项。绑定银行卡等收款信息职位核对信用只用，不是扣款依据</p>
+           	</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

@@ -1,0 +1,58 @@
+<!-- 顶部导航-->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left back-left" id="purchaseDetailsBack">
+			<a href="javascript:void(0);" class="link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+		<div class="center sliding">购买CUBC</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="PurchaseDetails" class="page no-tabbar payment_style_4s">
+		<div class="page-content hide-bars-on-scroll content-bg payment_style_5s flex_c">
+			<div class="SaleDetails_top">
+				<div id="PurchaseAvatar-show-t"></div>
+				<div class="SaleDetails_top_div_2">
+					<span id="PurchaseAvatar-userName-t">CUBC欧阳信</span>
+					<span class="Ouyang">
+						<img id="Alipay-SaleDetails-o" src="img/index/Alipay-s.png"/>
+						<img id="silver-SaleDetails-o" src="img/index/silver-s.png"/>
+						<img id="WeChat-SaleDetails-o" src="img/index/WeChat-s.png"/>
+					</span>
+				</div>
+				<div class="justify-content">
+					<div class="SaleDetails_top_div_content">
+						<p id="PurchaseAvatar-Turnover-rate"></p>
+						<p>成交率</p>
+					</div>
+				</div>
+				<div class="justify-content">
+					<div class="SaleDetails_top_div_content">
+						<p id="PurchaseAvatar-Transaction-order"></p>
+						<p>交易单</p>
+					</div>
+				</div>
+			</div>
+			<ul class="SaleDetails_top_ul SaleDetails_top_ul_change">	
+				<li><span>价格(CNY)</span><label id="PurchaseAvatar-price-o-o"></label>
+					<input type="hidden" id="PurchaseAvatar-hid-adid" />
+					<input type="hidden" id="PurchaseAvatar-hid-TargetUserID" />
+					<input type="hidden" id="PurchaseAvatar-hid-max" />
+					<input type="hidden" id="PurchaseAvatar-inputs-puls_er" />
+					<input type="hidden" id="PurchaseAvatar-MinRation-o-o" />
+					<input type="hidden" id="PurchaseAvatar-MaxRation-o-o" />
+				</li>
+				<li><span>剩余资产</span><input id="PurchaseAvatar-Currently-o-o" name="SaleDetails4s" class="SaleDetails2s" readonly="readonly" type="number" placeholder="资产数"></li>
+				<li><span>金额(CNY)</span><input id="PurchaseAvatar-Amount-o-o" name="SaleDetails4s" class="SaleDetails2s" type="number" placeholder="限额 10000-50000"><span id="PurchaseAvatar-Amount-o-bnt" onclick="Orderset.PurchaseAvatarAmount();">全部</span></li>
+				<li><span>资产(CUBC)</span><input id="PurchaseAvatar-Quantity-o-o" name="SaleDetails4s" type="number" placeholder="请输入购买数量"><span id="PurchaseAvatar-Quantity-o-bnt" onclick="Orderset.PurchaseAvatarAmount();">全部</span></li>
+				<li><span>资金密码</span><input id="PurchaseAvatar-FundPassword-o-o" name="SaleDetails4s" type="password" placeholder="请输入资金密码"><!--<span>全部</span>--></li>
+			</ul>
+			<div class="modify_content">
+				<p class="PurchaseDetails_e_d_ps"><span class="float">手续费<span class="colord2s" id="PurchaseAvatar-spans-puls">0</span></span><span class="float_r">注：手续费由广告发布者支付</span></p> 
+				<a class="modify_btn" style="margin: 0rem 0 1.2rem 0;" id="PurchaseAvatar-u-btn-t" href="javascript:void(0);">购买</a>
+			</div>
+		</div>
+	</div>
+</div>

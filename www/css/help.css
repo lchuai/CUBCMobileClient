@@ -1,0 +1,51 @@
+.help-content{
+     margin-top:0rem;
+     height: 100%;
+}
+ .myQuestion img{
+     width: 1.25rem;
+     height: 0.9375rem;
+}
+ .help-input input{
+     padding-left: 13%!important;
+     width: 86%;
+     height: 1.5625rem;
+     border: none;
+     margin-bottom: 0rem;
+     background-color: #F6F6F6!important;
+}
+ .help-input i{
+     font-size: 1.125rem;
+     color: gray;
+     position: relative;
+     top: 2rem;
+     left: 0.625rem;
+}
+ .help-content-list{
+     margin-bottom: 1.875rem;
+}
+ .help-content-list h3{
+ 	 margin-top: 0.2rem;
+     font-family: PingFangSC Medium;
+     font-size: 0.8rem;
+     color: #101010;
+}
+ .help-content-list p{
+     line-height: 1.25rem;
+     font-size: 0.7rem;
+     text-align: justify;
+}
+ .editQuestion {
+     z-index: 99999999;
+     position: fixed;
+     bottom: 0.5rem;
+     right: 0rem;
+     width: 4.1rem;
+     transform: none;
+     display: inline;
+     isolation: isolate;
+}
+ .editQuestion img{
+     width: 3rem;
+     height: 3rem;
+}

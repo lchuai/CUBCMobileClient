@@ -1,0 +1,47 @@
+<!-- 顶部导航-->
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="left back-left" id="LivingPayment-Electricity">
+			<a href="javascript:void(0);" class="link">
+				<i class="icon icon-back"></i>
+			</a>
+		</div>
+		<div class="center sliding">新增电费缴费账户</div>
+	</div>
+</div>
+<div class="pages">
+	<div data-page="NewUserElectricity" class="page no-tabbar payment_style_4s">
+		<div class="page-content hide-bars-on-scroll content-bg payment_style_5s flex_c">
+			<div class="SaleDetails2_Tobepaid">
+				<div class="NewUserElectricity_containes justify-content float">
+					<img src="img/LivingPayment/Electricity_fee_2.png" />
+				</div>
+				<div class="float" style="margin-left: 0.5rem;">电费</div>
+				<div class="float_r btl_color_h" id="NewUserElectricity_MySelAreaName">昆明</div>
+			</div>
+			<input type="hidden" id="NewUserElectricity_hids_inputs_e" />
+			
+			<input type="hidden" id="NewUserElectricity_MyAreaID" />
+			<ul class="SaleDetails_top_ul SaleDetails_top_ul_change">
+				<li><span>缴费单位</span><input id="Electricity_unit" name="SaleDetails4s" type="text" readonly="readonly" placeholder="请选择缴费单位" onclick="LivingPayment.ElectricityUsersClicks();" /></li>
+				<li><span>客户编号</span><input style="width: 9rem;" id="Electricity_Numbering" name="SaleDetails4s" type="number" placeholder="请输入户号" /><span onclick="LivingPayment.HowCheckTheAccount();">如何查户号?</span></li>
+				<li><span>户名</span><input id="Electricity_AccountName" name="SaleDetails4s" type="text" placeholder="请输入用户名" /></li>
+				<li><span>住址</span><input id="Electricity_address" name="SaleDetails4s" type="text" placeholder="请输入住址" /></li>
+			</ul>
+			<div class="modify_content">
+				<ul class="NewUserElectricity_footer_comments">
+					<li>
+						<label class="label-checkbox item-content">
+					        <input id="NewUserElectricity_u_checkbox" type="checkbox" name="my-checkboxt" value="1" />
+					        <div class="item-media NewUserElectricity_media">
+					          <i class="icon icon-form-checkbox NewUserElectricity_i"></i>
+					        </div>					        
+	      				</label>
+	      				<span class="float NewUserElectricity_mspans">我已阅读并同意<span class="btl_color_h" onclick="LivingPayment.SelfPaymentAgreement();">《CUBC自助缴费协议》</span></span>
+					</li>
+				</ul>
+				<a class="modify_btn" href="javascript:;" onclick="LivingPayment.ElectricityUserConfirmed();">确认</a>
+			</div>
+		</div>
+	</div>
+</div>
